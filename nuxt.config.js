@@ -51,7 +51,7 @@ module.exports = {
     '@nuxtjs/strapi'
   ],
   strapi: {
-    url: 'http://localhost:1337',
+    url: 'https://api.rouxnicolas.fr/',
     entities: ['evenements']
   },
   /*
