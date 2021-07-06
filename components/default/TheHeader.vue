@@ -9,13 +9,12 @@
           >
             <img src="~assets/img/svg/map.svg" alt="" />
             <p>Aller à la Maison Blanche</p>
-            </a>
-            <span></span>
-            <a href="tel:+33675483665">
+          </a>
+          <span></span>
+          <a href="tel:+33675483665">
             <img src="~assets/img/svg/phone_mb.svg" alt="" />
             <p>Contact</p>
-            </a>
-          
+          </a>
         </div>
       </div>
       <div class="top_bar_header">
@@ -26,22 +25,67 @@
           <span :class="{ open: openMenu }"></span>
         </div>
         <transition name="menu" appear>
-        <div class="items_mobile_fixed" v-if="openMenu">
-          <div class="items_mobile" @click="openMenu = !openMenu">
-            <nuxt-link to="/">Restaurant</nuxt-link>
-            <nuxt-link to="/">Menu</nuxt-link>
-            <nuxt-link to="/evenements">Événements</nuxt-link>
-            <nuxt-link to="/contact">Contact</nuxt-link>
+          <div class="items_mobile_fixed" v-if="openMenu">
+            <div class="items_mobile">
+              <nuxt-link to="/" @click="openMenu = !openMenu"
+                >Restaurant</nuxt-link
+              >
+              <div class="items_menu" @click="itemMenu = !itemMenu">
+                <p>Menu</p>
+                <img
+                  :class="{ rotate: itemMenu }"
+                  src="~assets/img/svg/angle.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="item_menu"
+                v-if="itemMenu"
+                @click=";(openMenu = !openMenu), (itemMenu = !itemMenu)"
+              >
+                <nuxt-link to="/menu/plats">Tapas</nuxt-link>
+                <nuxt-link to="/menu/plats">Entrées - Plats</nuxt-link>
+                <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+                <nuxt-link to="/menu/rhum">Autour du Rhum</nuxt-link>
+              </div>
+
+              <nuxt-link to="/evenements" @click="openMenu = !openMenu"
+                >Événements</nuxt-link
+              >
+              <nuxt-link to="/contact" @click="openMenu = !openMenu"
+                >Contact</nuxt-link
+              >
+            </div>
+            <div class="cta_header" @click="openMenu = !openMenu">
+              <nuxt-link to="/reservation">
+                <button>
+                  Réserver
+                </button>
+              </nuxt-link>
+            </div>
+            <div class="copyright">
+              <div class="infos_sociaux">
+                <div class="infos">
+                  <p>
+                    Avenue de Biscarrosse, <br />
+                    33170, Pyla-sur-mer
+                  </p>
+                  <p>
+                    hello@lamaisonblanche-dune.fr <br />
+                    +33 (0)6 75 48 36 65
+                  </p>
+                </div>
+                <div class="sociaux">
+                  <img src="~assets/img/svg/facebook_r.svg" alt="logo facebook" />
+                  <img
+                    src="~assets/img/svg/instagram_r.svg"
+                    alt="logo instagram"
+                  />
+                  <img src="~assets/img/svg/trip_r.svg" alt="logo trip" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cta_header" @click="openMenu = !openMenu">
-            <nuxt-link to="/reservation" >
-              <button>
-                Réserver
-              </button>
-            </nuxt-link>
-          </div>
-          <div class="infos_header"></div>
-        </div>
         </transition>
       </div>
     </div>
@@ -52,7 +96,8 @@
 export default {
   data() {
     return {
-      openMenu: false
+      openMenu: false,
+      itemMenu: false
     }
   }
 }
@@ -74,7 +119,7 @@ export default {
 }
 
 .block_map {
-    display: flex; 
+  display: flex;
 }
 
 .block_map a {
@@ -84,12 +129,12 @@ export default {
 }
 
 .block_map span {
-    width: 2px;
-    height: 20px;
-    border: none; 
-    display: block;
-    background-color: var(--white);
-    margin: 0 15px;
+  width: 2px;
+  height: 20px;
+  border: none;
+  display: block;
+  background-color: var(--white);
+  margin: 0 15px;
 }
 
 .top_bar_map .block_map p {
@@ -104,7 +149,7 @@ export default {
 }
 
 .top_bar_header {
-  padding: 15px 10px 10px 10px;
+  padding: 15px 20px 10px 20px;
   background-color: var(--background);
   border-bottom: 1px solid #e0e0e0;
   display: flex;
@@ -165,53 +210,90 @@ export default {
   top: 98px;
   background-color: var(--background);
   right: 0;
+  overflow: scroll;
   left: 0;
   bottom: 0;
 }
 
 .menu-enter-active {
-    animation: slide .3s ease-in-out;
+  animation: slide 0.3s ease-in-out;
 }
 
 .menu-leave-active {
-  animation: slideClose .3s ease-in-out;
+  animation: slideClose 0.3s ease-in-out;
 }
 
 @keyframes slide {
-    from {
-        transform: translateX(100%); 
-    }
-    to {
-        transform: translateX(0); 
-
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideClose {
-    from {
-        transform: translateX(0); 
-        delay: 5s;
-    }
-    to {
-        delay: 5s;
-        transform: translateX(100%); 
-
-    }
+  from {
+    transform: translateX(0);
+    delay: 5s;
+  }
+  to {
+    delay: 5s;
+    transform: translateX(100%);
+  }
 }
 
 .items_mobile {
   display: flex;
   flex-flow: column;
-  text-align: center;
-  margin: 50px auto 10px auto;
+  margin: 50px 20px 10px 20px;
 }
 
 .items_mobile a {
   font-size: 28px;
   margin-bottom: 20px;
   color: var(--redBody);
-  font-weight: bold;
+  font-family: 'Noto Serif', serif;
   text-decoration: none;
+}
+
+.items_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.items_menu img {
+  width: 30px;
+  margin-top: -5px;
+  transition: all 0.3s;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.items_menu p {
+  font-size: 28px;
+  font-family: 'Noto Serif', serif;
+  margin-bottom: 20px;
+  color: var(--redBody);
+  text-decoration: none;
+}
+
+.item_menu {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+
+.item_menu a {
+  font-size: 14px;
+  color: var(--black);
+  margin-left: 3px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .cta_header {
@@ -225,14 +307,57 @@ export default {
 }
 
 .cta_header a button {
-  background-color: var(--green);
+  background-color: var(--redBody);
   padding: 14px 24px;
   font-size: 16px;
   border: none;
   color: var(--white);
   font-family: 'Arimo', sans-serif;
   font-weight: bold;
-  width: 70%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 10px 20px;
+}
+
+.copyright {
+  margin: 80px 20px;
+}
+
+.infos {
+  margin-top: 10px;
+}
+
+.infos p {
+  margin-bottom: 10px;
+}
+
+.infos p:nth-child(1) {
+  margin-bottom: 20px;
+  color: var(--black); 
+  font-weight: bold; 
+}
+
+.infos p:nth-child(2) {
+  margin-bottom: -8px;
+  color: var(--body); 
+  font-weight: lighter; 
+}
+
+
+
+.infos_sociaux {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end;
+}
+
+.sociaux {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -10px!important;
+}
+.sociaux img {
+  margin-top: -10px!important;
+
+  margin-left: 15px;
 }
 </style>

@@ -47,7 +47,7 @@ body {
 }
 
 :root {
-  --background: #F8F2E7;
+  --background: rgb(248, 242, 231);
   --redBody: #984346; 
   --green: #52895f; 
   --body: #6e685c;

@@ -214,12 +214,12 @@ hr {
 
 @media screen and (min-width: 1300px) {
    .container_footer {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0px auto; 
   }
 
   .items {
-    width: 300px;
+    width: 250px;
   }
 }
 </style>

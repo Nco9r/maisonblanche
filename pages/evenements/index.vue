@@ -33,7 +33,7 @@
             <p>{{ evenement.date }}</p>
           </div>
           <div class="img">
-            <img :src="evenement.imgUrl" alt="" />
+            <img :src="api_Url + evenement.img.url" alt="" />
           </div>
           <div class="content">
           <div class="content-title">
@@ -63,7 +63,7 @@ export default {
   },
   data() {
     return {
-      api_Url: 'http://localhost:1337'
+      api_Url: 'https://api.rouxnicolas.fr/'
     }
   }
 }

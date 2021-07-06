@@ -1,0 +1,44 @@
+[
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/Nicolas/maisonblanche/pages/contact.vue",
+    "chunkName": "pages/contact"
+  },
+  {
+    "name": "evenements",
+    "path": "/evenements",
+    "component": "/Users/Nicolas/maisonblanche/pages/evenements/index.vue",
+    "chunkName": "pages/evenements/index"
+  },
+  {
+    "name": "menu",
+    "path": "/menu",
+    "component": "/Users/Nicolas/maisonblanche/pages/menu/index.vue",
+    "chunkName": "pages/menu/index"
+  },
+  {
+    "name": "reservation",
+    "path": "/reservation",
+    "component": "/Users/Nicolas/maisonblanche/pages/reservation.vue",
+    "chunkName": "pages/reservation"
+  },
+  {
+    "name": "menu-plats",
+    "path": "/menu/plats",
+    "component": "/Users/Nicolas/maisonblanche/pages/menu/plats.vue",
+    "chunkName": "pages/menu/plats"
+  },
+  {
+    "name": "evenements-slug",
+    "path": "/evenements/:slug",
+    "component": "/Users/Nicolas/maisonblanche/pages/evenements/_slug.vue",
+    "chunkName": "pages/evenements/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/Nicolas/maisonblanche/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

@@ -29,6 +29,7 @@ export default {}
 <style scoped>
 .newsletter {
   width: 100%;
+  margin-top: -4px;
   background-color: var(--green);
   padding-bottom: 100Px;
   background-image: url('~assets/img/svg/16.svg'); 

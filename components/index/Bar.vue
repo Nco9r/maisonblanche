@@ -6,19 +6,19 @@
           <hr class="trait" />
           <hr class="rond" />
           <span class="subhead">bar</span>
-          <h2 data-aos="fade-up" data-aos-duration="2000" >
+          <h2 data-aos="fade-in" data-aos-duration="2000" >
             un
             <span class="italic_title">bar</span> à rhum et cocktails
           </h2>
         </div>
 
-        <p data-aos="fade-up" data-aos-duration="2000" >
+        <p data-aos="fade-in" data-aos-duration="2000" >
           Venez découvrir les saveurs de <strong>nos rhums</strong> et ainsi vous offrir un
           <strong>voyage gustatif</strong>, des Caraibes au Fidji, en passant par Madagascar.
           Vous pourrez y trouver également nos préparations <strong>affinées de rhums
           arrangés</strong>.
         </p>
-        <p data-aos="fade-up" data-aos-duration="2000" >
+        <p data-aos="fade-in" data-aos-duration="2000" >
             L’espace <strong>bar extérieur</strong> et le <strong>terrain de pétanque</strong> vous permettra
             de siroter un <strong>cocktail</strong> et de se <strong>divertir</strong>, en après-midi
             comme en soirée.
@@ -55,7 +55,7 @@ strong {
 }
 
 .bar {
-  margin: -150px 10px 100px 10px;
+  margin: 50px 20px 100px 20px;
 }
 .trait {
   width: 1px;

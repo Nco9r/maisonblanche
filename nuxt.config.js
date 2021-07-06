@@ -1,6 +1,7 @@
 
 module.exports = {
   mode: 'universal',
+  buildDir: 'nuxt-dist',
   /*
   ** Headers of the page
   */

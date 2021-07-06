@@ -162,7 +162,7 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .container_hero {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 50px auto;
   }
   .container_hero .logo img {

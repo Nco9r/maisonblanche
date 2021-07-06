@@ -5,19 +5,19 @@
         <hr class="trait" />
         <hr class="rond" />
         <span class="subhead">Cadre</span>
-        <h2 data-aos="fade-up" data-aos-duration="2000" >
+        <h2 data-aos="fade-in" data-aos-duration="2000">
           Le restaurant sous son
           <span class="italic_title">plus beau</span> jour
         </h2>
         <div class="block_right">
-          <p data-aos="fade-up" data-aos-duration="2000" >
+          <p data-aos="fade-in" data-aos-duration="2000">
             Située à deux pas de la <strong>Dune du Pilat</strong>, la Maison
             Blanche vous propose une <strong>escapade</strong> au coeur des pins
             et à <strong>proximité de l’océan</strong>. Notre terrasse en bois
             vous plongera dans un cadre <strong>chaleureux</strong> et
             <strong>ensoleillé</strong>.
           </p>
-          <p data-aos="fade-up" data-aos-duration="2000" >
+          <p data-aos="fade-in" data-aos-duration="2000">
             Lors des soirées d’été, notre
             <strong>programmation musicale</strong> vous offrira un moment plus
             <strong>festif et dansant</strong>. Toute l’équipe à hâte de vous
@@ -34,8 +34,7 @@
             </div>
           </div>
           <div class="cta_events">
-            <nuxt-link to="/evenements">
-            Événements</nuxt-link>
+            <nuxt-link to="/evenements"> Événements</nuxt-link>
           </div>
         </div>
       </div>
@@ -43,18 +42,9 @@
     <VueSlickCarousel v-bind="slickOptions" ref="carousel" class="carousel">
       <div class="block_img">
         <img src="~assets/img/jpg/food_1.jpg" alt="" />
-        <div class="text">
-          <p>Pizzà isabella</p>
-          
-        </div>
       </div>
       <div class="block_img">
         <img src="~assets/img/jpg/food_2.jpg" alt="" />
-         <div class="text">
-          <p>Gin Tonic</p>
-          
-        </div>
-
       </div>
       <div class="block_img">
         <img src="~assets/img/jpg/food_1.jpg" alt="" />
@@ -81,7 +71,7 @@ export default {
         slidesToShow: 1,
         slidesToScroll: 1,
         touchThreshold: 5,
-        centerPadding: '240px',
+        centerPadding: '240px'
       }
     }
   },
@@ -102,14 +92,15 @@ strong {
 }
 
 .carousel_section {
-  margin: 90px 10px 30px 10px;
+  margin: 90px -10px 0px -10px;
 }
 
 .slick_slide {
   margin-right: 10px;
 }
 .title_generate {
-  text-align: center; 
+  text-align: center;
+  padding: 0 30px;
 }
 
 .trait {
@@ -118,7 +109,7 @@ strong {
   background-color: var(--redBody);
   border: none;
   margin: auto;
-  display: flex; 
+  display: flex;
   margin-bottom: 10px;
 }
 
@@ -154,53 +145,50 @@ strong {
 
 .block_img {
   display: inline-block;
-  margin-right: 20px!important;
+  margin-right: 20px !important;
 }
 
-.slick-slider .slick-slide .block_img{
+.slick-slider .slick-slide .block_img {
   padding: 0 10px;
 }
 
 .block_img img {
   width: 100%;
-  height: 500px;
+  height: 300px;
   object-fit: cover;
 }
 
-
-
 .block_img .text p {
-  font-size: 14px; 
-  color: var(--body); 
+  font-size: 14px;
+  color: var(--body);
   margin-top: 10px;
-  font-style: italic; 
+  font-style: italic;
   font-weight: bold;
-  display: flex; 
+  display: flex;
   justify-content: flex-end;
   flex-flow: row;
 }
 
-.block_img .text  {
-  display: flex; 
+.block_img .text {
+  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: var(--body); 
-
+  color: var(--body);
 }
 
 .block_img .text span {
   width: 100%;
-  margin: 0 5px; 
-  border-bottom: 1px dotted var(--black)
+  margin: 0 5px;
+  border-bottom: 1px dotted var(--black);
 }
 
 .block_right {
-  margin-top: 20px;
-  text-align: left;
+  margin-top: 40px;
 }
 
 .block_right p {
   margin-bottom: 10px;
+  text-align: center;
   line-height: 24px;
   font-size: 14px;
   color: var(--body);
@@ -211,21 +199,22 @@ strong {
   margin-bottom: 30px;
   display: flex;
   flex-flow: row-reverse wrap;
-  justify-content: space-between; align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cta_events a{
+.cta_events a {
   background-color: var(--redBody);
   color: var(--white);
   padding: 12px 24px;
-  text-decoration: none; 
+  text-decoration: none;
   font-size: 14px;
   font-family: 'Arimo', sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .slick-slide {
-  margin: 0 10px!important;
+  margin: 0 10px !important;
 }
 
 .slide {
@@ -257,23 +246,27 @@ strong {
 }
 
 @media screen and (min-width: 1024px) {
-  .carousel {
-    max-width: 1200px;
+  .carousel_section {
+    max-width: 1000px;
     margin: 150px auto;
   }
 
   .title_generate {
-    width: 550px;
+    text-align: center;
+  width: 1000px;
+  margin: auto;
     background-color: var(--background);
   }
 
   .block_right p {
-    width: 500px;
+    width: 700px;
+    text-align: center;
+    margin: 20px auto;
   }
 
   .title_generate h2 {
-    line-height: 62px;
-    font-size: 42px;
+    line-height: 72px;
+    font-size: 52px;
     margin: 20px auto;
   }
 

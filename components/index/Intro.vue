@@ -6,19 +6,19 @@
         <hr class="rond" />
         <span class="subhead">Restaurant</span>
       
-        <h2 data-aos="fade-up" data-aos-duration="2000" >
+        <h2 data-aos="fade-in" data-aos-duration="2000" >
           une cuisine traditionnelle dans
           <span class="italic_title">un cadre</span> à ciel ouvert
         </h2>
       </div>
       <div class="content_intro">
         <div class="block_right" >
-          <p data-aos="fade-up" data-aos-duration="2000" >
+          <p data-aos="fade-in" data-aos-duration="2000" >
             Le restaurant vous invite à voyager au coeur d’une cuisine inspirée
             de la <strong>trattoria traditionnelle</strong>. Nous présentons une cuisine
             authentique, <strong>généreuse</strong> et dans le respect des <strong>arrivages de saison</strong>.
           </p>
-          <p data-aos="fade-up" data-aos-duration="2000"  >
+          <p data-aos="fade-in" data-aos-duration="2000"  >
             En effet, nous avons fait le choix de travailler des <strong>produits</strong>
             provenant <strong>d’Italie</strong> ainsi qu’une sélection plus locale avec la <strong>viande</strong>
             (côte de cochon AOP) et les <strong>charcuteries AOP</strong> de chez <strong>Pierre Oteiza</strong>.
@@ -26,7 +26,7 @@
             et artisan charcutier a développé son savoir-faire afin de produire
             <strong>la meilleure viande</strong> possible.
           </p>
-          <p data-aos="fade-up" data-aos-duration="2000">
+          <p data-aos="fade-in" data-aos-duration="2000">
             Vous retrouvez la <strong>qualité</strong> de ces produits sur <strong>nos pizzas</strong> dont la
             pâte est pétrie <strong>chaque matin</strong> par nos pizzaiolos. Venez découvrir le
             <strong>vrai fait maison</strong>.
@@ -65,7 +65,7 @@ strong {
   color: #202020;
 }
 .intro {
-  margin: 200px 10px 100px 10px;
+  margin: 200px 20px 50px 20px;
 }
 
 .trait {
@@ -184,7 +184,7 @@ strong {
 
 @media screen and (min-width: 1024px) {
   .intro {
-    max-width: 1200px; 
+    max-width: 1000px; 
     margin: 200px auto;
   }
 
@@ -215,6 +215,7 @@ strong {
 .content_intro {
   display: flex;
   margin-top: 80px;
+  justify-content: space-between;
 }
 
 .block_right {
@@ -244,11 +245,19 @@ strong {
 
 @media screen and (min-width: 1300px) {
   .intro {
-    max-width: 1300px;
+    max-width: 1100px;
   }
 
   .block_left img:nth-child(3) {
  bottom: -25px;
+}
+
+.block_right {
+  width: 40%;
+}
+
+.block_left {
+  width: 55%;
 }
 }
 </style>

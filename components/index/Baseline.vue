@@ -137,7 +137,7 @@ export default {
   margin-right: 10px;
   margin-left: 10px;
    font-family: 'Roboto Condensed', sans-serif;
-
+  color: var(--green);
   align-items: center;
   font-style: italic;
   font-size: 34px;
@@ -173,7 +173,11 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .container_baseline h3 {
-    font-size: 54px;
+    font-size: 64px;
+  }
+
+  .container_baseline_1 h3 {
+    font-size: 64px;
   }
 }
 </style>

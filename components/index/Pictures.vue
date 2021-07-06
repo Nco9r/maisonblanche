@@ -26,8 +26,8 @@ export default {
                 scrub: true,
                 toggleActions: "restart pause reverse pause"
             },
-            x: -50,
-            y: 50,
+            x: -80,
+            y: 80,
         }),
         gsap.to(".second_p", {
             scrollTrigger: {
@@ -37,8 +37,8 @@ export default {
                 scrub: true,
                 toggleActions: "restart pause reverse pause"
             },
-            x: 50,
-            y: -50,
+            x: 80,
+            y: -80,
         })
     }, 
 }
@@ -46,14 +46,24 @@ export default {
 
 <style scoped>
 .pictures {
-  width: 100%;
-  height: 600px;
+  max-width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
   position: relative;
   overflow: hidden;
+  margin: auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
 .pictures img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+  border: 1px solid var(--redBody);
+  padding: 10px;
+  object-fit: cover;
+
 }
 
 .pictures img:nth-child(1) {
@@ -61,7 +71,7 @@ export default {
   height: 197px;
   position: absolute;
   object-fit: cover;
-  bottom: 200px;
+  bottom: 100px;
   left: 30px;
 }
 
@@ -70,19 +80,11 @@ export default {
   height: 197px;
   position: absolute;
   object-fit: cover;
-  top: 50px;
+  top: 100px;
   right: 60px;
 }
 
-.pictures img:nth-child(3) {
-  width: 250px;
-  height: 250px;
-  z-index: -1;
-  position: absolute;
-  object-fit: cover;
-  top: 10%;
-  left: 13%;
-}
+
 
 .box {
   background-image: url('~assets/img/svg/box.svg');
@@ -119,68 +121,36 @@ export default {
   .pictures {
     max-width: 1200px;
     margin: 0 auto 300px auto;
-    display: none;
+    height: 700px;
+  
   }
-  
-  .box {
-  background-image: url('~assets/img/svg/box.svg');
-  background-repeat: no-repeat;
-  background-position: calc(100% - 0.5rem) calc(100% - 0.5rem);
-  background-size: 3rem;
-  margin: auto;
-  padding: 3rem;
-  height: 500px;
-  margin-top: 70px;
-  position: relative;
-  text-align: center;
-  z-index: 4;
-  max-width: 500px;
+
+  .pictures img {
+  width: 450px;
+  height: 450px;
+  border: 1px solid var(--redBody);
+  padding: 10px;
+  object-fit: cover;
+
 }
 
-.box::before {
-  background-image: url('~assets/img/svg/box.svg');
-  background-repeat: no-repeat;
-  background-position: calc(100% - 0.5rem) calc(100% - 0.5rem);
-  background-size: 3rem;
-  border: 1px solid rgb(134, 32, 65);
-  content: '';
-  display: block;
-  height: 500px;
-  left: 0px;
+.pictures img:nth-child(1) {
+  width:360px;
+  height: 397px;
   position: absolute;
-  top: 0px;
-  transform: rotate(180deg);
-  width: 100%;
-  z-index: 3;
+  object-fit: cover;
+  bottom: 100px;
+  left: 190px;
 }
-  
 
-  .box_pictures img:nth-child(1) {
+.pictures img:nth-child(2) {
   width: 360px;
   height: 397px;
   position: absolute;
   object-fit: cover;
-  bottom: -250px;
-  left: -250px;
+  top: 100px;
+  right: 200px;
 }
-
-.box_pictures img:nth-child(2) {
-  width: 300px;
-  height: 397px;
-  position: absolute;
-  object-fit: cover;
-  top: -100px;
-  right: -200px;
-}
-
-.box_pictures img:nth-child(3) {
-  width: 450px;
-  height: 450px;
-  z-index: -1;
-  position: absolute;
-  object-fit: cover;
-  top: 10%;
-  left: 13%;
-}
+  
 }
 </style>
