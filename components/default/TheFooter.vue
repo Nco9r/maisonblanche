@@ -99,7 +99,6 @@ footer {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 15px;
-  opacity: .8;
 }
 
 hr {

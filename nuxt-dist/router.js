@@ -8,7 +8,12 @@ const _2a270952 = () => interopDefault(import('../pages/contact.vue' /* webpackC
 const _44c8886b = () => interopDefault(import('../pages/evenements/index.vue' /* webpackChunkName: "pages/evenements/index" */))
 const _6a7ade40 = () => interopDefault(import('../pages/menu/index.vue' /* webpackChunkName: "pages/menu/index" */))
 const _cbc2d404 = () => interopDefault(import('../pages/reservation.vue' /* webpackChunkName: "pages/reservation" */))
+const _0144b83a = () => interopDefault(import('../pages/menu/boissons.vue' /* webpackChunkName: "pages/menu/boissons" */))
+const _75927822 = () => interopDefault(import('../pages/menu/desserts.vue' /* webpackChunkName: "pages/menu/desserts" */))
 const _f9026b9c = () => interopDefault(import('../pages/menu/plats.vue' /* webpackChunkName: "pages/menu/plats" */))
+const _5393adb0 = () => interopDefault(import('../pages/menu/rhum.vue' /* webpackChunkName: "pages/menu/rhum" */))
+const _56f4fda3 = () => interopDefault(import('../pages/menu/tapas.vue' /* webpackChunkName: "pages/menu/tapas" */))
+const _1c613d1a = () => interopDefault(import('../pages/menu/vins.vue' /* webpackChunkName: "pages/menu/vins" */))
 const _4311e723 = () => interopDefault(import('../pages/evenements/_slug.vue' /* webpackChunkName: "pages/evenements/_slug" */))
 const _5a194384 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -40,9 +45,29 @@ export const routerOptions = {
     component: _cbc2d404,
     name: "reservation"
   }, {
+    path: "/menu/boissons",
+    component: _0144b83a,
+    name: "menu-boissons"
+  }, {
+    path: "/menu/desserts",
+    component: _75927822,
+    name: "menu-desserts"
+  }, {
     path: "/menu/plats",
     component: _f9026b9c,
     name: "menu-plats"
+  }, {
+    path: "/menu/rhum",
+    component: _5393adb0,
+    name: "menu-rhum"
+  }, {
+    path: "/menu/tapas",
+    component: _56f4fda3,
+    name: "menu-tapas"
+  }, {
+    path: "/menu/vins",
+    component: _1c613d1a,
+    name: "menu-vins"
   }, {
     path: "/evenements/:slug",
     component: _4311e723,

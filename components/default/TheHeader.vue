@@ -43,7 +43,7 @@
                 v-if="itemMenu"
                 @click=";(openMenu = !openMenu), (itemMenu = !itemMenu)"
               >
-                <nuxt-link to="/menu/plats">Tapas</nuxt-link>
+                <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
                 <nuxt-link to="/menu/plats">Entrées - Plats</nuxt-link>
                 <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
                 <nuxt-link to="/menu/rhum">Autour du Rhum</nuxt-link>
