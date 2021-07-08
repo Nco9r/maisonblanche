@@ -218,6 +218,7 @@ strong {
   background-color: transparent;
   border-bottom: 1px solid var(--redBody);
   width: 100%;
+  border-radius: 0px;
   padding: 10px;
   font-size: 16px;
   color: var(--body);

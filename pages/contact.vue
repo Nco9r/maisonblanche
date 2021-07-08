@@ -247,6 +247,7 @@ strong {
   border-bottom: 1px solid var(--redBody);
   width: 100%;
   padding: 10px 5px;
+  border-radius: 0px;
   font-size: 16px;
   color: var(--body);
   font-family: 'Noto', sans-serif;
@@ -262,6 +263,7 @@ strong {
 
 .label textarea {
   border: none;
+  border-radius: 0px;
   background-color: transparent;
   border-bottom: 1px solid var(--redBody);
   width: 100%;
