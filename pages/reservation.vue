@@ -30,6 +30,28 @@
               <p>E-mail</p>
               <input type="email" />
             </div>
+            <div class="label">
+              <p>Nombre de personnes</p>
+              <select
+            name=""
+            id=""
+          
+            required
+            autocomplete="none"
+          >
+            <option disabled selected value="Choisir dans la liste">Choisir dans la liste</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+            </div>
             <div class="label_1">
               <p>Sélectionner une date</p>
               <no-ssr>
@@ -42,7 +64,7 @@
               </no-ssr>
             </div>
              <div class="label">
-              <p>Sélectionner une horaire</p>
+              <p>Sélectionner un horaire</p>
               <select
             name=""
             id=""
@@ -244,7 +266,7 @@ select {
   border-radius: 0px;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+
   font-size: 14px;
 }
 
