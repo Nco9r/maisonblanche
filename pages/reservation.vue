@@ -20,7 +20,7 @@
           <div class="content_label">
             <div class="label">
               <p>Nom et prénom</p>
-              <input type="button" />
+              <input type="text" />
             </div>
             <div class="label">
               <p>Téléphone</p>
