@@ -36,7 +36,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [{ src: './plugins/vue-slick-carousel.js' },
-  { src: './plugins/date.js' }
+  { src: './plugins/date.js' },
+  { src: '~plugins/v-calendar.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

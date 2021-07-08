@@ -530,7 +530,7 @@ export default {
   font-weight: lighter;
   margin: -5px 20px 0 20px;
   line-height: 20px;
-  color: var(--body);
+  color: var(--black);
 }
 
 .accompagnement {

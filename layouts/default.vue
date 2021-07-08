@@ -5,9 +5,6 @@
     <the-footer/>
   </div>
 </template>
-
-
-
 <script>
 import TheFooter from '../components/default/TheFooter'
 import TheHeader from '../components/default/TheHeader'
@@ -15,7 +12,7 @@ export default {
   components: {
     TheFooter,
     TheHeader
-  }
+  },
 }
 </script>
 
@@ -47,9 +44,10 @@ body {
 }
 
 :root {
-  --background: rgb(248, 242, 231);
+  --background: rgb(253, 248, 239);
   --redBody: #984346; 
   --green: #52895f; 
+  --green-rhum: #155323; 
   --body: #6e685c;
   --white: #fff;
   --black: #202020;
@@ -73,8 +71,9 @@ h1, h2, h3, h4, h5 {
   font-weight: 400; 
   color: var(--redBody);
   text-transform: uppercase;
-
 }
+
+
 
 
 </style>

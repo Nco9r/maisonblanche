@@ -16,439 +16,447 @@
       </div>
     </div>
     <section class="menu">
-      <div class="redBackground">
+      <div class="blackBody">
         <div class="title">
-          <h2>Tapas à partager</h2>
+          <h2>Apéritifs</h2>
         </div>
       </div>
       <div class="elements_menu">
-        <p class="content">Fritto misto del mar</p>
+        <p class="content">Spiritueux 10cl</p>
         <span></span>
-        <p class="price">6.00€</p>
+        <p class="price">5.00€</p>
       </div>
 
       <div class="elements_menu">
-        <p class="content">Accra de Morue</p>
+        <p class="content">Martini blanc ou rouge</p>
         <span></span>
-        <p class="price">7,50€</p>
+        <p class="price">5,00€</p>
       </div>
       <div class="elements_menu">
-        <p class="content">Pimentos padron selon arrivage</p>
+        <p class="content">Kir</p>
         <span></span>
-        <p class="price">8,00€</p>
+        <p class="price">5,00€</p>
       </div>
       <div class="elements_menu">
-        <p class="content">Fricassée de Sèches en persillade</p>
+        <p class="content">Lillet Blanc, porto</p>
         <span></span>
-        <p class="price">8,00€</p>
+        <p class="price">5,00€</p>
       </div>
       <div class="elements_menu">
-        <p class="content">Frito Misto</p>
+        <p class="content">Anis 5cl</p>
         <span></span>
-        <p class="price">7,00€</p>
+        <p class="price">4,00€</p>
       </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Planche de charcuterie de chez Pierre Oteiza pour 2
-          </p>
-          <span></span>
-          <p class="price">13,90€</p>
-        </div>
-        <p class="description">
-          Jambon cru, saucisson sec, chorizo, jambon blanc, mortadelle
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Planche de charcuterie de chez Pierre Oteiza pour 4
-          </p>
-          <span></span>
-          <p class="price">27,80€</p>
-        </div>
-        <p class="description">
-          Jambon cru, saucisson sec, chorizo, jambon blanc, mortadelle.
-        </p>
-      </div>
-      <div class="greenBody">
+      <div class="blackBody">
         <div class="title">
-          <h2>Antipasti</h2>
+          <h2>Alcools et digestifs 5cl</h2>
         </div>
       </div>
       <div class="content_menu">
         <div class="elements_menu">
           <p class="content">
-            Gaspacho de tomate coeur de boeuf
+            Cognac, Armagnac, Calvados, Eaux de vie
           </p>
           <span></span>
           <p class="price">8,00€</p>
         </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Rhum, Whisky, Gin, Vodka
+          </p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Manzana, Limoncello, Get 27
+          </p>
+          <span></span>
+          <p class="price">5,50€</p>
+        </div>
+      </div>
+      <div class="blackBody_1">
+        <div class="title">
+          <h2>Boissons Chaudes</h2>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Expresso
+          </p>
+          <span></span>
+          <p class="price">2,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Chocolat
+          </p>
+          <span></span>
+          <p class="price">4,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Double expresso
+          </p>
+          <span></span>
+          <p class="price">3,50€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Thé vert menthe
+          </p>
+          <span></span>
+          <p class="price">3,50€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Grand crème
+          </p>
+          <span></span>
+          <p class="price">4,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Infusion
+          </p>
+          <span></span>
+          <p class="price">3,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Cappuccino
+          </p>
+          <span></span>
+          <p class="price">4,50€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Irish coffee
+          </p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+      <div class="blackBody_1">
+        <div class="title">
+          <h2>Boissons fraiches</h2>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Sirops
+          </p>
+          <span></span>
+          <p class="price">2,60€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Limonade
+          </p>
+          <span></span>
+          <p class="price">3,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Diabolo
+          </p>
+          <span></span>
+          <p class="price">3,30€</p>
+        </div>
         <p class="description">
-          et sa foccacia (pain pizza)
+          Citron, fraise, grenadine, menthe, pêche, orgeat.
         </p>
       </div>
       <div class="content_menu">
         <div class="elements_menu">
           <p class="content">
-            L'oeuf Maison Blanche
+            Soda 33cl
           </p>
+          <span></span>
+          <p class="price">3,60€</p>
+        </div>
+        <p class="description">
+          Coca, Coca Zéro, Orangina, Ice Tea, Oasis, Schweppes, argrume et
+          tonic.
+        </p>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Perrier 33cl
+          </p>
+          <span></span>
+          <p class="price">3,60€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Pago 33cl
+          </p>
+          <span></span>
+          <p class="price">4,50€</p>
+        </div>
+        <p class="description">
+          Orange, ananas, pomme.
+        </p>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Eau Plate Abatilles 50cl
+          </p>
+          <span></span>
+          <p class="price">2,90€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Eau Plate Abatilles 1L
+          </p>
+          <span></span>
+          <p class="price">4,50€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Eau Gazeuse Abatilles 50cl
+          </p>
+          <span></span>
+          <p class="price">3,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Eau Gazeuse Abatilles 1L
+          </p>
+          <span></span>
+          <p class="price">4,60€</p>
+        </div>
+      </div>
+      <div class="blackBody">
+        <div class="title">
+          <h2>Macario italian retro drink</h2>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Limonata
+          </p>
+          <span></span>
+          <p class="price">5,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Thé citron
+          </p>
+          <span></span>
+          <p class="price">5,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Thé pêche
+          </p>
+          <span></span>
+          <p class="price">5,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Thé menthe
+          </p>
+          <span></span>
+          <p class="price">5,00€</p>
+        </div>
+      </div>
+      <div class="blackBody">
+        <div class="title">
+          <h2>Bières pression</h2>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Morretti <span class="ligther">(Demi 25cl)</span>
+          </p>
+          <span></span>
+          <p class="price">3,70€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">
+            Morretti <span class="ligther">(Pinte 50cl)</span>
+          </p>
+          <span></span>
+          <p class="price">7,00€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Leffe <span class="ligther">(Demi 25cl)</span></p>
+          <span></span>
+          <p class="price">4,50€</p>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Leffe <span class="ligther">(Pinte 50cl)</span></p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+      <div class="blackBody">
+        <div class="title">
+          <h2>Bières bouteilles</h2>
+        </div>
+      </div>
+      <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Hoegaarden blanche, Desperado 33cl</p>
+          <span></span>
+          <p class="price">6,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Corona 35.5cl</p>
+          <span></span>
+          <p class="price">6,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Bière blonde italienne</p>
+          <span></span>
+          <p class="price">6,00€</p>
+        </div>
+         <p class="description">
+          Birra Antoniana
+        </p>
+      </div>
+       <div class="blackBody_1">
+        <div class="title">
+          <h2>Cocktails</h2>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Pinà colada</p>
           <span></span>
           <p class="price">10,00€</p>
         </div>
-        <p class="description">
-          Oeuf poché, crémeux de chorizo doux, brioche toastée et chips de
-          jambon de bayonne.
-        </p>
       </div>
-      <div class="content_menu">
+       <div class="content_menu">
         <div class="elements_menu">
-          <p class="content">
-            Rillettes de sardines
-          </p>
+          <p class="content">London Mule</p>
           <span></span>
-          <p class="price">8,50€</p>
+          <p class="price">9,00€</p>
         </div>
-        <p class="description">
-          Ortiz dans sa boîte avec ses condiments.
-        </p>
       </div>
-      <div class="content_menu">
+       <div class="content_menu">
         <div class="elements_menu">
-          <p class="content">
-            Foie gras poêlé et son chutney
-          </p>
+          <p class="content">Moscow Mule</p>
           <span></span>
-          <p class="price">12,00€</p>
+          <p class="price">9,00€</p>
         </div>
-        <p class="description">
-          de fruits secs de saison (Abricot, raisin, figue et pignon de pin)
-        </p>
       </div>
-      <div class="greenBackground">
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Mojito</p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Ti-punch</p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Planteur maison</p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Caïpirinha</p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Spritz</p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+       <div class="content_menu">
+        <div class="elements_menu">
+          <p class="content">Americano</p>
+          <span></span>
+          <p class="price">8,00€</p>
+        </div>
+      </div>
+      <div class="blackBody_1">
         <div class="title">
-          <h2>Insalata</h2>
+          <h2>Cocktails sans alcools</h2>
         </div>
       </div>
       <div class="content_menu">
         <div class="elements_menu">
-          <p class="content">
-            Véritable salade César
-          </p>
+          <p class="content">Virgin Mojito</p>
           <span></span>
-          <p class="price">14,50€</p>
-        </div>
-        <p class="description">
-          Salade Romaine, poulet mariné, anchois, tomates, oeuf dur, croûtons,
-          sauce César.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Salade Maison Blanche
-          </p>
-          <span></span>
-          <p class="price">14,50€</p>
-        </div>
-        <p class="description">
-          3 variétés de tomates, mesclun, burratina(3), pesto basilic au Grana
-          Padano (2).
-        </p>
-      </div>
-      <div class="redBackground_1">
-        <div class="title">
-          <h2>La Carne</h2>
+          <p class="price">6,00€</p>
         </div>
       </div>
       <div class="content_menu">
         <div class="elements_menu">
-          <p class="content">
-            Escalope de veau (180g)
-          </p>
+          <p class="content">Cocktail de jus de fruits</p>
           <span></span>
-          <p class="price">23,50€</p>
-        </div>
-        <p class="description">
-          - Saltimbocca : escalope coupée finement, jambon cru, sauce vin blanc,
-          crème, champignons. <br />
-          - Picatta : escalope gratinée au Grana Padano.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Tagliata de boeuf VBF (4)
-          </p>
-          <span></span>
-          <p class="price">24,00€</p>
-        </div>
-        <p class="description">
-          Boeuf poêlé, roquette, copeaux de Grana Padano, vinaigre balsamique
-          argent IGP (5)
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Côte de Cochon noir des aldudes AOP (6) 400 gr
-          </p>
-          <span></span>
-          <p class="price">28,00€</p>
-        </div>
-        <p class="description">
-          Et piperade.
-        </p>
-      </div>
-      <div class="accompagnement">
-        <p>
-          <strong>Au choix accompagnement</strong> : Tagliatelle persto basilic,
-          frites, piperade, salade.
-        </p>
-      </div>
-      <div class="greenBackground">
-        <div class="title">
-          <h2>Menu Bambini</h2>
+          <p class="price">6,00€</p>
         </div>
       </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Pizza per bambini : Base tomate, jambon, origan, mozza <br />
-            ou <br />
-            Pâtes : Tagliatelle carbonara ou bolognaise <br />
-            +1 Glace enfant
-          </p>
-          <span></span>
-          <p class="price">10,50€</p>
-        </div>
-      </div>
-      <div class="greenBackground">
-        <div class="title">
-          <h2>Il Pecse</h2>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Fricasée de calamari à la basque, riz pilaf
-          </p>
-          <span></span>
-          <p class="price">19,50€</p>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Filet de dorade
-          </p>
-          <span></span>
-          <p class="price">24,00€</p>
-        </div>
-        <p class="description">
-          Snacké à l'unilatéral, vierge de légumes et olive lechni
-        </p>
-      </div>
-      <div class="redBackground_1">
-        <div class="title">
-          <h2>La Pasta</h2>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Rigatonni arabiata
-          </p>
-          <span></span>
-          <p class="price">12,50€</p>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Spaghetti pesto parmesan
-          </p>
-          <span></span>
-          <p class="price">13,50€</p>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Lasagnes traditionnelles
-          </p>
-          <span></span>
-          <p class="price">16,50€</p>
-        </div>
-        <p class="description">
-          avec sa salade de mesclun
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Tagliatelle carbonara
-          </p>
-          <span></span>
-          <p class="price">14,00€</p>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Tagliatelle bolognaise
-          </p>
-          <span></span>
-          <p class="price">14,00€</p>
-        </div>
-      </div>
-      <div class="redBody">
-        <div class="title">
-          <h2>Les Pizzas</h2>
-        </div>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Margo
-          </p>
-          <span></span>
-          <p class="price">10,50€</p>
-        </div>
-        <p class="description">
-          Base tomate, mozzarella, basilic.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Napo
-          </p>
-          <span></span>
-          <p class="price">14,50€</p>
-        </div>
-        <p class="description">
-          Base tomate, anchois, câpres, olives, mozza.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Isabella
-          </p>
-          <span></span>
-          <p class="price">13,50€</p>
-        </div>
-        <p class="description">
-          Base tomate, jambon, champignons, mozza.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            4 Formaggio
-          </p>
-          <span></span>
-          <p class="price">14,50€</p>
-        </div>
-        <p class="description">
-          Base crème, gorgonzola, mozza, taleggio, Grana Padano.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            La Sensa
-          </p>
-          <span></span>
-          <p class="price">14,50€</p>
-        </div>
-        <p class="description">
-          Sans base, tomates cerises, ricotta, ail, origan, pesto, mozza, jambon
-          de parme.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            La Capo
-          </p>
-          <span></span>
-          <p class="price">14,50€</p>
-        </div>
-        <p class="description">
-          Base tomate, chorizo (1), poivron frais, mozza, oignons, oeuf.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            La Vege
-          </p>
-          <span></span>
-          <p class="price">15,50€</p>
-        </div>
-        <p class="description">
-          Base tomate, aubergine, poivron, artichaud, mozza, origan, ail.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Maison Blanche
-          </p>
-          <span></span>
-          <p class="price">14,90€</p>
-        </div>
-        <p class="description">
-          Base crème, pancetta, oignon, mozza, roquette, scarmorza
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            La Maiale
-          </p>
-          <span></span>
-          <p class="price">15,50€</p>
-        </div>
-        <p class="description">
-          Base tomate, oignon, jambon de parme, saucisse sèche mortadelle,
-          coppa.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            I Gamberi
-          </p>
-          <span></span>
-          <p class="price">16,00€</p>
-        </div>
-        <p class="description">
-          Base tomate, grosses crevettes, courgettes, huile d'ail basilic,
-          olives noires (italienne lechini), mozza.
-        </p>
-      </div>
-      <div class="content_menu">
-        <div class="elements_menu">
-          <p class="content">
-            Itartufo
-          </p>
-          <span></span>
-          <p class="price">19,50€</p>
-        </div>
-        <p class="description">
-          Base crème, jambon blanc truffé, huile de truffe, mozza, truffe d'été,
-          roquette, burriatina (2) 125 gr.
-        </p>
-        <div class="accompagnement_green">
-          <p>
-            <strong>Suppléments ingrédients pizza</strong> : fromages italiens
-            2.50€, charcuterie 2.50€, Oeuf 1.00€
-          </p>
-        </div>
-      </div>
+      
+
     </section>
     <Newsletter />
   </main>
@@ -464,6 +472,11 @@ export default {
 </script>
 
 <style scoped>
+.ligther {
+  font-weight: lighter;
+  background-color: transparent !important;
+}
+
 .top_bar_fixed {
   position: fixed;
   right: 0;
@@ -494,7 +507,7 @@ export default {
 .items {
   display: flex;
   margin-top: 10px;
-    padding-bottom: 15px;
+  padding-bottom: 15px;
   overflow-x: scroll;
   flex-flow: row nowrap;
 }
@@ -525,28 +538,44 @@ export default {
 }
 
 .menu {
-  padding: 150px 0;
-  /* background-image: url('~assets/img/jpg/back_bois.png');
+  padding: 150px 0 30px 0;
+  background-image: url('~assets/img/jpg/back_bois.png');
   background-repeat: repeat;
-  background-size: 100%; */
+  background-size: 100%;
 }
 
-.redBackground {
-  background-color: var(--redBody);
+.blackBody {
   padding: 20px;
   margin-top: 30px;
-
   margin-bottom: 20px;
   border-bottom: 2px solid var(--black);
+  border-top: 2px solid var(--black);
 }
 
-.redBackground .title h2 {
+.blackBody .title h2 {
   text-align: center;
-  color: var(--white);
+  color: var(--black);
   font-size: 24px;
+  font-style: italic;
   font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.blackBody_1 {
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--black);
+  border-top: 2px solid var(--black);
+}
+
+.blackBody_1 .title h2 {
+  text-align: center;
+  color: var(--black);
+  font-size: 24px;
   text-transform: none;
-  font-family: 'italic-title';
+  font-family: 'italic-title', sans-serif;
 }
 
 .redBackground_1 {
@@ -650,7 +679,7 @@ export default {
   font-weight: lighter;
   margin: -5px 20px 0 20px;
   line-height: 20px;
-  color: var(--body);
+  color: var(--black);
 }
 
 .accompagnement {

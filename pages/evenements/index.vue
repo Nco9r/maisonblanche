@@ -1,13 +1,10 @@
 <template>
   <main>
+    <breadcrumb/>
     <section class="evenements">
-      <div class="container_img_evenements">
-        <img src="~assets/img/jpg/mb.jpg" alt="" />
-      </div>
       <div class="container_evenements">
         <div class="title_generate">
-          <hr class="trait" />
-          <hr class="rond" />
+
           <span class="subhead">agenda</span>
           <h2>
             Retrouvez tous nos
@@ -21,23 +18,26 @@
             </p>
           </div>
         </div>
+        <hr>
+        <div class="number_evenement">
+          <p>Il y <span>{{evenements.length }}</span> événement à venir à la Maison Blanche.</p>
+          <p v-if="evenements.length === 0">Il n'y a aucun événements à venir à la Maison Blanche.</p>
+        </div>
+        <hr>
       </div>
       <div
         class="evenements_cards"
         v-for="evenement in evenements"
         :key="evenement.id"
       >
-        <p v-if="evenements > 1">Il n'y a aucun événements à venir</p>
         <div class="evenement">
-          <div class="date">
-            <p>{{ evenement.date }}</p>
-          </div>
           <div class="img">
-            <img :src="api_Url + evenement.img.url" alt="" />
+            <img :src="evenement.imgUrl" alt="" />
           </div>
           <div class="content">
           <div class="content-title">
             <h2>{{ evenement.title }}</h2>
+             <p>{{ evenement.date }}</p>
           </div>
           <div class="content_evenements">
             <p>{{ evenement.description }}</p>
@@ -52,45 +52,51 @@
 
 <script>
 import Newsletter from '../../components/default/Newsletter'
+import Breadcrumb from '../../components/default/Breadcrumb'
+
 
 export default {
   async asyncData({ $strapi }) {
     const evenements = await $strapi.$evenements.find()
     return { evenements }
   },
+
   components: {
-    Newsletter
+    Newsletter,
+    Breadcrumb
   },
   data() {
     return {
       api_Url: 'https://api.rouxnicolas.fr/'
     }
-  }
+  },
+  
 }
 </script>
 
 <style scoped>
+
+
+span {
+  color: var(--redBody);
+  font-weight: bold;
+}
 .evenements {
-  margin: 100px 10px;
+  margin: 10px 20px 50px 20px;
 }
 .title_generate {
-  text-align: center;
   margin-top: 30px;
-  margin-bottom: -70Px;
 }
 .trait {
   width: 1px;
   height: 50px;
-  margin: auto;
   background-color: var(--redBody);
   border: none;
-  margin: auto;
   margin-bottom: 10px;
 }
 
 .rond {
   width: 10px;
-  margin: auto;
   height: 10px;
   border-radius: 50%;
   background-color: var(--green);
@@ -125,26 +131,22 @@ export default {
   margin-bottom: 10px;
   line-height: 24px;
   color: var(--body);
-  padding: 0 30px;
   font-size: 14px;
 }
 
 .evenements_cards {
-  margin-top: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--white);
+  box-shadow: 2Px 2Px 8px rgb(241, 241, 241)
 }
 
-.evenement {
-  padding: 15px;
-}
 
 .evenement .date p{
-  background-color: var(--green);
-  padding: 12px 24px; 
-  color: var(--white);
+  color: var(--black);
   margin: auto;
-  width: 150px;
-  text-align: center;
   z-index: 1;
+  margin-bottom: 10px;
 }
 
 .evenement .img img {
@@ -157,7 +159,7 @@ export default {
 }
 
 .container_img_evenements {
-  margin-top: 110px;
+  margin-top: 0px;
 }
 
 .container_img_evenements img {
@@ -166,13 +168,37 @@ export default {
 }
 
 .content {
-  background-color: var(--white);
   z-index: 10px;
+  padding: 10px 0;
+}
+
+.content-title {
+  display: flex; 
   padding: 10px;
+  margin-bottom: 10px;
+  flex-flow: row; 
+  align-items: center;
+  justify-content: space-between;
 }
 
 .content-title h2 {
   font-size: 20px;
-  margin-bottom: 10px;
+  text-transform: none;
+}
+
+.content_evenements {
+  padding: 0 10px 10px 10px;
+}
+
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgb(221, 221, 221);
+  margin: 20px 0;
+}
+.number_evenement p {
+  color: var(--black);
 }
 </style>

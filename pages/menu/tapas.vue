@@ -308,14 +308,15 @@ export default {
   color: var(--black);
   font-weight: bold;
 }
-
+/* 
 .elements_menu span {
   height: 1px;
   margin-right: 10px;
+  width: 100%;
   border: none;
+  border-bottom: 1px dotted var(--body);
   margin-bottom: 7px;
-  background-color: var(--black);
-}
+} */
 
 .elements_menu .price {
   color: var(--black);
@@ -327,7 +328,7 @@ export default {
   font-weight: lighter;
   margin: -5px 20px 0 20px;
   line-height: 20px;
-  color: var(--body);
+  color: var(--black);
 }
 
 .accompagnement {

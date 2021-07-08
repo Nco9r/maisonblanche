@@ -13,7 +13,7 @@
         </h1>
       </div>
       <div class="img_food">
-        <img class="mobile" src="~assets/img/jpg/food_1.jpg" alt="" />
+        <img class="mobile" src="~assets/img/jpg/pizza.jpeg" alt="" />
         <img class="second " src="~assets/img/jpg/food_2.jpg" alt="" />
         <img
           class="desktop"

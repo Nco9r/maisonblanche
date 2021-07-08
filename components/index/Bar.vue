@@ -24,7 +24,7 @@
             comme en soirée.
           </p>
 
-        <div class="cta_bar">
+        <nuxt-link to="/menu/rhum"><div class="cta_bar">
           <div class="round">
             <img src="~assets/img/svg/arrow_mb.svg" alt="" />
           </div>
@@ -32,6 +32,7 @@
             <p>carte</p>
           </div>
         </div>
+        </nuxt-link>
       </div>
       <div class="content_bar">
         <div class="block_left">

@@ -41,16 +41,16 @@
     </div>
     <VueSlickCarousel v-bind="slickOptions" ref="carousel" class="carousel">
       <div class="block_img">
-        <img src="~assets/img/jpg/food_1.jpg" alt="" />
+        <img src="~assets/img/jpg/cocktails.jpeg" alt="" />
       </div>
       <div class="block_img">
-        <img src="~assets/img/jpg/food_2.jpg" alt="" />
+        <img src="~assets/img/jpg/pizza_1.jpeg" alt="" />
       </div>
       <div class="block_img">
-        <img src="~assets/img/jpg/food_1.jpg" alt="" />
+        <img src="~assets/img/jpg/tipunch.jpeg" alt="" />
       </div>
       <div class="block_img">
-        <img src="~assets/img/jpg/food_1.jpg" alt="" />
+        <img src="~assets/img/jpg/terrasse.jpeg" alt="" />
       </div>
     </VueSlickCarousel>
   </section>

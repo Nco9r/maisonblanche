@@ -34,9 +34,11 @@
       </div>
       <hr />
       <div class="container_logo">
-        <div class="booking">
-          <button>Réservez</button>
-        </div>
+        <nuxt-link to="/reservation"
+          ><div class="booking">
+            <button>Réservez</button>
+          </div>
+        </nuxt-link>
         <div class="logo">
           <img src="~assets/img/svg/logo_mb_green.svg" alt="" />
         </div>
@@ -102,119 +104,116 @@ footer {
 }
 
 hr {
-  border: none; 
-  height: 1Px;
+  border: none;
+  height: 1px;
   width: 100%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.199)
+  background-color: rgba(255, 255, 255, 0.199);
 }
 
 .container_logo {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.container_logo .logo{
-    margin-top: 50px;
+.container_logo .logo {
+  margin-top: 50px;
 }
 
 .container_logo .booking button {
-    background-color: var(--background);
-    border: none;
-    padding: 12px 24px;
-    font-family: 'Noto Serif', serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--redBody);
+  background-color: var(--background);
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--redBody);
 }
 
 .container_copyright {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .container_copyright .sociaux p {
-    color: var(--white);
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .container_copyright .icon_sociaux {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container_copyright .icon_sociaux img {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .copyright {
-    margin-top: 30px;padding: 0 15Px;
+  margin-top: 30px;
+  padding: 0 15px;
 }
 
-.copyright p{
-    color: var(--white);
+.copyright p {
+  color: var(--white);
 }
 
 @media screen and (min-width: 1024px) {
-
   .container_footer {
     max-width: 1200px;
-    margin: 0px auto; 
+    margin: 0px auto;
   }
 
   .container_items {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: left;
-  justify-content: space-between;
-}
-
-.items {
-  width: 280px;
-  padding: 0px;
-}
-
-.container_logo {
     display: flex;
-  flex-flow: row-reverse wrap;
-  text-align: left;
-  align-items: flex-end;
-  margin-top: 5px;
-  justify-content: space-between;
-}
+    flex-flow: row wrap;
+    text-align: left;
+    justify-content: space-between;
+  }
 
+  .items {
+    width: 280px;
+    padding: 0px;
+  }
 
+  .container_logo {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    text-align: left;
+    align-items: flex-end;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
 
-.container_copyright {
-   display: flex;
-  flex-flow: row-reverse wrap;
-  text-align: left;
-  align-items: center;
-  margin-top: 5px;
-  justify-content: space-between;
-}
+  .container_copyright {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    text-align: left;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
 
-.container_copyright .sociaux {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  text-align: left;
-  align-items: flex-end;
-  margin-top: 20px;
-  justify-content: space-between;
-}
+  .container_copyright .sociaux {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    text-align: left;
+    align-items: flex-end;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
 
-.container_copyright .sociaux p {
+  .container_copyright .sociaux p {
     margin-bottom: 0px;
-}
-
+  }
 }
 
 @media screen and (min-width: 1300px) {
-   .container_footer {
+  .container_footer {
     max-width: 1100px;
-    margin: 0px auto; 
+    margin: 0px auto;
   }
 
   .items {

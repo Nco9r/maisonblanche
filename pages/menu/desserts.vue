@@ -249,6 +249,7 @@ export default {
   background-color: var(--redBody);
   padding: 20px;
   margin-top: 30px;
+  border-top: 2px solid var(--black);
 
   margin-bottom: 20px;
   border-bottom: 2px solid var(--black);
@@ -364,7 +365,7 @@ export default {
   font-weight: lighter;
   margin: -5px 20px 0 20px;
   line-height: 20px;
-  color: var(--body);
+  color: var(--black);
 }
 
 .content_menu .description_artisan {

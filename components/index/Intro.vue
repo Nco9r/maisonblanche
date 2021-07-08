@@ -5,40 +5,46 @@
         <hr class="trait" />
         <hr class="rond" />
         <span class="subhead">Restaurant</span>
-      
-        <h2 data-aos="fade-in" data-aos-duration="2000" >
+
+        <h2 data-aos="fade-in" data-aos-duration="2000">
           une cuisine traditionnelle dans
           <span class="italic_title">un cadre</span> à ciel ouvert
         </h2>
       </div>
       <div class="content_intro">
-        <div class="block_right" >
-          <p data-aos="fade-in" data-aos-duration="2000" >
+        <div class="block_right">
+          <p data-aos="fade-in" data-aos-duration="2000">
             Le restaurant vous invite à voyager au coeur d’une cuisine inspirée
-            de la <strong>trattoria traditionnelle</strong>. Nous présentons une cuisine
-            authentique, <strong>généreuse</strong> et dans le respect des <strong>arrivages de saison</strong>.
+            de la <strong>trattoria traditionnelle</strong>. Nous présentons une
+            cuisine authentique, <strong>généreuse</strong> et dans le respect
+            des <strong>arrivages de saison</strong>.
           </p>
-          <p data-aos="fade-in" data-aos-duration="2000"  >
-            En effet, nous avons fait le choix de travailler des <strong>produits</strong>
-            provenant <strong>d’Italie</strong> ainsi qu’une sélection plus locale avec la <strong>viande</strong>
-            (côte de cochon AOP) et les <strong>charcuteries AOP</strong> de chez <strong>Pierre Oteiza</strong>.
-            Au coeur de la vallée des Aldudes, Pierre Oteiza éleveur, producteur
-            et artisan charcutier a développé son savoir-faire afin de produire
+          <p data-aos="fade-in" data-aos-duration="2000">
+            En effet, nous avons fait le choix de travailler des
+            <strong>produits</strong> provenant <strong>d’Italie</strong> ainsi
+            qu’une sélection plus locale avec la <strong>viande</strong> (côte
+            de cochon AOP) et les <strong>charcuteries AOP</strong> de chez
+            <strong>Pierre Oteiza</strong>. Au coeur de la vallée des Aldudes,
+            Pierre Oteiza éleveur, producteur et artisan charcutier a développé
+            son savoir-faire afin de produire
             <strong>la meilleure viande</strong> possible.
           </p>
           <p data-aos="fade-in" data-aos-duration="2000">
-            Vous retrouvez la <strong>qualité</strong> de ces produits sur <strong>nos pizzas</strong> dont la
-            pâte est pétrie <strong>chaque matin</strong> par nos pizzaiolos. Venez découvrir le
+            Vous retrouvez la <strong>qualité</strong> de ces produits sur
+            <strong>nos pizzas</strong> dont la pâte est pétrie
+            <strong>chaque matin</strong> par nos pizzaiolos. Venez découvrir le
             <strong>vrai fait maison</strong>.
           </p>
-          <div class="cta_intro">
-            <div class="round">
-              <img src="~assets/img/svg/arrow_mb.svg" alt="" />
+          <nuxt-link to="/menu/tapas">
+            <div class="cta_intro">
+              <div class="round">
+                <img src="~assets/img/svg/arrow_mb.svg" alt="" />
+              </div>
+              <div class="content_cta">
+                <p>Menu</p>
+              </div>
             </div>
-            <div class="content_cta">
-              <p>Menu</p>
-            </div>
-          </div>
+          </nuxt-link>
         </div>
         <div class="block_left">
           <img src="~assets/img/svg/coin_round.svg" alt="" />
@@ -53,13 +59,15 @@
 <script>
 import aosMixin from '~/mixins/aos'
 
-
 export default {
   mixins: [aosMixin]
 }
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 
 strong {
   color: #202020;
@@ -112,7 +120,8 @@ strong {
 .block_right p {
   margin-bottom: 10px;
   line-height: 24px;
-  color: var(--body);
+  color: var(--black);
+  font-family: lighter;
   font-size: 14px;
 }
 
@@ -129,8 +138,8 @@ strong {
   background-color: var(--redBody);
   position: relative;
   margin-bottom: 20px;
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   transition: all 0.3s;
@@ -142,9 +151,7 @@ strong {
 }
 
 .cta_intro .round img {
-  
   width: 13px;
-
 }
 
 .content_cta p {
@@ -184,63 +191,61 @@ strong {
 
 @media screen and (min-width: 1024px) {
   .intro {
-    max-width: 1000px; 
+    max-width: 1000px;
     margin: 200px auto;
   }
 
   .title_generate {
-    text-align: center; 
+    text-align: center;
   }
 
   .trait {
-  margin: auto;
+    margin: auto;
   }
 
   .rond {
-  margin: 10px auto;
-}
+    margin: 10px auto;
+  }
 
   .title_generate h2 {
-  text-align: center;
-  line-height: 62px;
-  font-size: 42px;
-  width: 900px;
-  margin: 20px auto; 
-}
+    text-align: center;
+    line-height: 62px;
+    font-size: 42px;
+    width: 900px;
+    margin: 20px auto;
+  }
 
-.italic_title {
-  font-size: 56px;
-}
+  .italic_title {
+    font-size: 56px;
+  }
 
-.content_intro {
-  display: flex;
-  margin-top: 80px;
-  justify-content: space-between;
-}
+  .content_intro {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+  }
 
-.block_right {
-  width: 800px;
-}
-.block_left img {
-  transition: all .3s;
-}
+  .block_right {
+    width: 800px;
+  }
+  .block_left img {
+    transition: all 0.3s;
+  }
 
-.block_left img:hover {
- width: 92%;
-}
+  .block_left img:hover {
+    width: 92%;
+  }
 
+  .block_left img:nth-child(3) {
+    bottom: 20px;
+  }
 
-
-.block_left img:nth-child(3) {
- bottom: 20px;
-}
-
-.block_left img:nth-child(1) {
-  position: absolute;
-  right: 0;
-  top: -30px;
-  width: 70px;
-}
+  .block_left img:nth-child(1) {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 70px;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -249,15 +254,15 @@ strong {
   }
 
   .block_left img:nth-child(3) {
- bottom: -25px;
-}
+    bottom: -25px;
+  }
 
-.block_right {
-  width: 40%;
-}
+  .block_right {
+    width: 40%;
+  }
 
-.block_left {
-  width: 55%;
-}
+  .block_left {
+    width: 55%;
+  }
 }
 </style>

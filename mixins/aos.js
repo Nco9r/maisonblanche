@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'
 export default {
   mounted() {
     AOS.init({
-      offset: 100,
+      offset: 200,
       once: true
      })
   }

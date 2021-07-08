@@ -25,10 +25,10 @@
           <span :class="{ open: openMenu }"></span>
         </div>
         <transition name="menu" appear>
-          <div class="items_mobile_fixed" v-if="openMenu">
-            <div class="items_mobile">
-              <nuxt-link to="/" @click="openMenu = !openMenu"
-                >Restaurant</nuxt-link
+          <div class="items_mobile_fixed" v-if="openMenu" >
+            <div class="items_mobile" >
+              <nuxt-link to="/" 
+                ><p @click="openMenu = !openMenu">Restaurant</p></nuxt-link
               >
               <div class="items_menu" @click="itemMenu = !itemMenu">
                 <p>Menu</p>
@@ -44,16 +44,17 @@
                 @click=";(openMenu = !openMenu), (itemMenu = !itemMenu)"
               >
                 <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
-                <nuxt-link to="/menu/plats">Entrées - Plats</nuxt-link>
+                <nuxt-link to="/menu/plats">Plats</nuxt-link>
                 <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
-                <nuxt-link to="/menu/rhum">Autour du Rhum</nuxt-link>
+                <nuxt-link to="/menu/vins">Vins</nuxt-link>
+                <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
               </div>
 
               <nuxt-link to="/evenements" @click="openMenu = !openMenu"
-                >Événements</nuxt-link
+                ><p @click="openMenu = !openMenu">Événements</p></nuxt-link
               >
               <nuxt-link to="/contact" @click="openMenu = !openMenu"
-                >Contact</nuxt-link
+                ><p @click="openMenu = !openMenu">Contact</p></nuxt-link
               >
             </div>
             <div class="cta_header" @click="openMenu = !openMenu">
@@ -250,11 +251,14 @@ export default {
 }
 
 .items_mobile a {
+  text-decoration: none;
+}
+
+.items_mobile a p {
   font-size: 28px;
   margin-bottom: 20px;
   color: var(--redBody);
   font-family: 'Noto Serif', serif;
-  text-decoration: none;
 }
 
 .items_menu {
