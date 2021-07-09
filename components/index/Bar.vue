@@ -37,7 +37,7 @@
       <div class="content_bar">
         <div class="block_left">
           <img src="~assets/img/svg/coin_round.svg" alt="" />
-          <img src="~assets/img/jpg/bar.jpg" alt="" />
+          <img src="~assets/img/jpg/bar_mb.jpg" alt="" />
           <img src="~assets/img/svg/coin_round.svg" alt="" />
         </div>
       </div>

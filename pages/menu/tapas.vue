@@ -43,7 +43,7 @@
         <p class="price">8,00€</p>
       </div>
       <div class="elements_menu">
-        <p class="content">Frito Misto</p>
+        <p class="content">Fritto Misto</p>
         <span></span>
         <p class="price">7,00€</p>
       </div>

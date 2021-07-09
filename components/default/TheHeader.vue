@@ -25,9 +25,9 @@
           <span :class="{ open: openMenu }"></span>
         </div>
         <transition name="menu" appear>
-          <div class="items_mobile_fixed" v-if="openMenu" >
-            <div class="items_mobile" >
-              <nuxt-link to="/" 
+          <div class="items_mobile_fixed" v-if="openMenu">
+            <div class="items_mobile">
+              <nuxt-link to="/"
                 ><p @click="openMenu = !openMenu">Restaurant</p></nuxt-link
               >
               <div class="items_menu" @click="itemMenu = !itemMenu">
@@ -51,10 +51,14 @@
               </div>
 
               <nuxt-link to="/evenements" @click="openMenu = !openMenu"
-                ><p @click="openMenu = !openMenu">Événements</p></nuxt-link
+                ><p class="appear_1" @click="openMenu = !openMenu">
+                  Événements
+                </p></nuxt-link
               >
               <nuxt-link to="/contact" @click="openMenu = !openMenu"
-                ><p @click="openMenu = !openMenu">Contact</p></nuxt-link
+                ><p class="appear_2" @click="openMenu = !openMenu">
+                  Contact
+                </p></nuxt-link
               >
             </div>
             <div class="cta_header" @click="openMenu = !openMenu">
@@ -77,7 +81,10 @@
                   </p>
                 </div>
                 <div class="sociaux">
-                  <img src="~assets/img/svg/facebook_r.svg" alt="logo facebook" />
+                  <img
+                    src="~assets/img/svg/facebook_r.svg"
+                    alt="logo facebook"
+                  />
                   <img
                     src="~assets/img/svg/instagram_r.svg"
                     alt="logo instagram"
@@ -121,10 +128,12 @@ export default {
 
 .block_map {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .block_map a {
   display: flex;
+  flex-flow: row wrap;
   align-items: flex-end;
   text-decoration: none;
 }
@@ -140,8 +149,7 @@ export default {
 
 .top_bar_map .block_map p {
   color: var(--white);
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
 }
 
 .top_bar_map .block_map img {
@@ -226,21 +234,21 @@ export default {
 
 @keyframes slide {
   from {
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slideClose {
   from {
-    transform: translateX(0);
+    transform: translateY(0);
     delay: 5s;
   }
   to {
     delay: 5s;
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -256,15 +264,39 @@ export default {
 
 .items_mobile a p {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: var(--redBody);
+  opacity: 0;
+  animation: appear 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+
   font-family: 'Noto Serif', serif;
 }
 
+.appear_1 {
+  animation-delay: 0.6s !important;
+}
+
+.appear_2 {
+  animation-delay: .7s !important;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(2px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .items_menu {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 .items_menu img {
@@ -277,6 +309,15 @@ export default {
   transform: rotate(90deg);
 }
 
+.items_menu {
+  opacity: 0;
+  animation: appear 0.3s ease-in-out;
+  animation-delay: 0.5s;
+  margin-bottom: 20px;
+
+  animation-fill-mode: forwards;
+}
+
 .items_menu p {
   font-size: 28px;
   font-family: 'Noto Serif', serif;
@@ -287,21 +328,25 @@ export default {
 
 .item_menu {
   display: flex;
+  margin-top: -20px;
   flex-flow: column;
   margin-bottom: 20px;
 }
 
 .item_menu a {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--black);
   margin-left: 3px;
-  letter-spacing: 1px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .cta_header {
   margin: 20px auto;
+  opacity: 0;
+  animation: appear 0.3s ease-in-out;
+  animation-delay: .8s;
+  animation-fill-mode: forwards;
 }
 
 .cta_header a {
@@ -323,7 +368,10 @@ export default {
 }
 
 .copyright {
-  margin: 80px 20px;
+  margin: 80px 20px;opacity: 0;
+  animation: appear 0.3s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 .infos {
@@ -336,31 +384,31 @@ export default {
 
 .infos p:nth-child(1) {
   margin-bottom: 20px;
-  color: var(--black); 
-  font-weight: bold; 
+  
+  color: var(--black);
+  font-weight: bold;
 }
 
 .infos p:nth-child(2) {
   margin-bottom: -8px;
-  color: var(--body); 
-  font-weight: lighter; 
+ 
+  color: var(--body);
+  font-weight: lighter;
 }
 
-
-
 .infos_sociaux {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
 .sociaux {
   display: flex;
   align-items: flex-end;
-  margin-top: -10px!important;
+  margin-top: -10px !important;
 }
 .sociaux img {
-  margin-top: -10px!important;
+  margin-top: -10px !important;
 
   margin-left: 15px;
 }

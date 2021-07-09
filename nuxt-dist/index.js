@@ -69,7 +69,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"maisonblanche","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Restaurant - Bar - Pizzeria | Pyla-sur-mer"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Roboto+Condensed:wght@300;400;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Noto+Serif:wght@400;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Arimo:wght@400;500;700&display=swap","rel":"stylesheet"}],"style":[],"script":[]},
+    head: {"title":"Restaurant Pyla-sur-mer | La Maison Blanche","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Le restaurant la Maison Blanche vous invite à voyager au coeur d’une cuisine inspirée de la trattoria traditionnelle. Nous présentons une cuisine authentique, généreuse et dans le respect des arrivages de saison."}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Noto+Serif:wght@400;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Arimo:wght@400;500;700&display=swap","rel":"stylesheet"}],"style":[],"script":[]},
 
     router,
     nuxt: {

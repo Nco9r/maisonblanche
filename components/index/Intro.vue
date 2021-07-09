@@ -122,6 +122,7 @@ strong {
   line-height: 24px;
   color: var(--black);
   font-family: lighter;
+  font-family: 'Noto', sans-serif;
   font-size: 14px;
 }
 

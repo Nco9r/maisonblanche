@@ -44,11 +44,11 @@ body {
 }
 
 :root {
-  --background: rgb(253, 248, 239);
-  --redBody: #984346; 
-  --green: #52895f; 
+  --background: #F8F2E7;
+  --redBody: #9c3135; 
+  --green: #3e834e; 
   --green-rhum: #155323; 
-  --body: #6e685c;
+  --body: #4e4e4e;
   --white: #fff;
   --black: #202020;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 p {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Noto', sans-serif;
   font-weight: 500;
   color: var(--body);
   font-size: 14px;
@@ -68,9 +68,15 @@ p {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Noto Serif', serif;
-  font-weight: 400; 
+  font-weight: 700; 
   color: var(--redBody);
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    display: none;
+  }
 }
 
 

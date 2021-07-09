@@ -20,7 +20,7 @@
         </div>
         <hr>
         <div class="number_evenement">
-          <p>Il y <span>{{evenements.length }}</span> événement à venir à la Maison Blanche.</p>
+          <p>Il y <span>{{evenements.length }}</span> événements à venir à la Maison Blanche.</p>
           <p v-if="evenements.length === 0">Il n'y a aucun événements à venir à la Maison Blanche.</p>
         </div>
         <hr>

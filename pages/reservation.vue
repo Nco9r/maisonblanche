@@ -32,57 +32,49 @@
             </div>
             <div class="label">
               <p>Nombre de personnes</p>
-              <select
-            name=""
-            id=""
-          
-            required
-            autocomplete="none"
-          >
-            <option disabled selected value="Choisir dans la liste">Choisir dans la liste</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
+              <select name="" id="" required autocomplete="none">
+                <option disabled selected value="Choisir dans la liste"
+                  >Choisir dans la liste</option
+                >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
             </div>
             <div class="label_1">
               <p>Sélectionner une date</p>
               <no-ssr>
                 <v-date-picker
                   mode="range"
-                  v-model="DateSelected"
+                  v-model="form.DateSelected"
                   :min-date="date"
                   show-caps
                 />
               </no-ssr>
             </div>
-             <div class="label">
+            <div class="label">
               <p>Sélectionner un horaire</p>
-              <select
-            name=""
-            id=""
-          
-            required
-            autocomplete="none"
-          >
-            <option disabled selected value="Choisir dans la liste">Choisir dans la liste</option>
-            <option value="12h">12h</option>
-            <option value="12h30">12h30</option>
-            <option value="13h">13h</option>
-            <option value="13h30">13h30</option>
-            <option value="19h">19h</option>
-            <option value="19h30">19h30</option>
-            <option value="20h">20h</option>
-            <option value="20h30">20h30</option>
-            <option value="21h">21h</option>
-          </select>
+              <select name="" id="" required autocomplete="none">
+                <option disabled selected value="Choisir dans la liste"
+                  >Choisir dans la liste</option
+                >
+                <option value="12h">12h</option>
+                <option value="12h30">12h30</option>
+                <option value="13h">13h</option>
+                <option value="13h30">13h30</option>
+                <option value="19h">19h</option>
+                <option value="19h30">19h30</option>
+                <option value="20h">20h</option>
+                <option value="20h30">20h30</option>
+                <option value="21h">21h</option>
+              </select>
             </div>
             <div class="label_check">
               <input type="checkbox" required @click="checkbox = !checkbox" />
@@ -92,12 +84,12 @@
                 demande de réservation.
               </p>
             </div>
-              <div class="cta_form">
-            <button v-if="!checkbox">Réservez</button>
-            <button v-if="checkbox" :class="{ opacity: checkbox }">
-              Réservez
-            </button>
-          </div>
+            <div class="cta_form">
+              <button v-if="!checkbox">Réservez</button>
+              <button v-if="checkbox" :class="{ opacity: checkbox }">
+                Réservez
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -112,6 +104,12 @@ export default {
       DateSelected: '',
       date: new Date(Date.now() + 3600 * 1000 * 24),
       checkbox: false,
+      form: {
+        name: '',
+        convives: '',
+        heure: '',
+        DateSelected: ''
+      }
     }
   }
 }
@@ -127,11 +125,18 @@ v-data-picker {
 }
 
 span.vc-day-content:hover {
-  background-color: transparent!important;
+  background-color: transparent !important;
+}
+.vc-bleu {
+  background-color: var(--green)!important;
+}
+.vc-day-content .is-disabled {
+  color: var(--body) !important;
 }
 
-.vc-blue {
-  color: var(--green);
+.vc-day-content .vc-focusable:focus {
+  background-color: var(--green)!important;
+
 }
 
 .vc-day .in-month .vc-day-box-center-center {
@@ -143,7 +148,7 @@ span.vc-day-content:hover {
   width: 100%;
   font-size: 14px;
   color: var(--black);
-  border: 1px solid var(--redBody);
+  border: 1px solid var(--black);
   border-radius: 0px;
   font-family: 'Arimo', sans-serif;
 }
@@ -153,8 +158,8 @@ span.vc-day-content:hover {
   color: var(--black) !important;
 }
 
-.vc-day-content .vc-focusable {
-  color: var(--green) !important;
+.vc-day-content .vc-focusable:focus {
+  background-color: var(--green) !important;
 }
 
 strong {
@@ -162,7 +167,7 @@ strong {
 }
 
 .block_right {
-  background-image: url('~assets/img/jpg/mb.jpg');
+  background-image: url('~assets/img/jpg/1.jpg');
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
@@ -171,9 +176,6 @@ strong {
 
 .block_left {
   padding: 20px 20px;
-}
-
-.title_block_left {
 }
 
 .title_block_left h1 {
@@ -238,7 +240,7 @@ strong {
 .label input {
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid var(--redBody);
+  border-bottom: 1px solid var(--black);
   width: 100%;
   border-radius: 0px;
   padding: 10px;
@@ -259,7 +261,7 @@ select {
   -webkit-appearance: none;
   padding: 14px;
   background-color: transparent;
-  border: 1px solid var(--redBody);
+  border: 1px solid var(--black);
   color: var(--black);
   font-weight: bold;
   outline: none;
@@ -271,8 +273,8 @@ select {
 }
 
 select option {
-  color: var(--black)
-} 
+  color: var(--black);
+}
 
 input[type='checkbox' i] {
   background-color: var(--white) !important;
@@ -311,8 +313,8 @@ input[type='checkbox' i]:checked::after {
 
 .label_check p {
   margin-left: 20px;
-  font-size: 14Px;
-  line-height: 20Px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .cta_form {
@@ -341,20 +343,19 @@ input[type='checkbox' i]:checked::after {
 }
 
 .service {
-  display: flex; 
-  flex-flow: row; 
+  display: flex;
+  flex-flow: row;
   margin-top: 10px;
   width: 100%;
   justify-content: space-between;
 }
 
 .service p {
-  border: 1Px solid var(--redBody);
+  border: 1px solid var(--redBody);
   padding: 8px 14px;
   width: 49%;
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-
 </style>

@@ -123,7 +123,7 @@ hr {
 .container_logo .booking button {
   background-color: var(--background);
   border: none;
-  padding: 12px 24px;
+  padding: 12px 44px;
   font-family: 'Noto Serif', serif;
   font-size: 16px;
   font-weight: bold;

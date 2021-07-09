@@ -160,7 +160,7 @@
 export default {
   data() {
     return {
-      faq_1: true,
+      faq_1: false,
       faq_2: false,
       faq_3: false,
       faq_4: false,
@@ -214,6 +214,7 @@ strong {
 
 .content_form p {
   padding: 10px 0px;
+
 }
 
 .content_label {
@@ -244,7 +245,7 @@ strong {
 .label input {
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid var(--redBody);
+  border-bottom: 1px solid var(--black);
   width: 100%;
   padding: 10px 5px;
   border-radius: 0px;
@@ -265,7 +266,7 @@ strong {
   border: none;
   border-radius: 0px;
   background-color: transparent;
-  border-bottom: 1px solid var(--redBody);
+  border-bottom: 1px solid var(--black);
   width: 100%;
   padding: 10px 5px;
   font-size: 16px;
@@ -364,7 +365,7 @@ input[type='checkbox' i]:checked::after {
 .title_question p {
   font-size: 14px;
   color: var(--black);
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .title_question img {
@@ -374,6 +375,7 @@ input[type='checkbox' i]:checked::after {
 
 .content_respons p {
   margin-top: 5px;
+  font-family: 'Noto', sans-serif;
   font-size: 14px;
   line-height: 24px;
 }

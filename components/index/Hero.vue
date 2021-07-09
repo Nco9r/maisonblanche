@@ -13,8 +13,8 @@
         </h1>
       </div>
       <div class="img_food">
-        <img class="mobile" src="~assets/img/jpg/pizza.jpeg" alt="" />
-        <img class="second " src="~assets/img/jpg/food_2.jpg" alt="" />
+        <img class="mobile" src="~assets/img/jpg/1.jpg" alt="" />
+        <img class="second " src="~assets/img/jpg/4.jpg" alt="" />
         <img
           class="desktop"
           src="~assets/img/jpg/restaurant_terasse.jpg"
@@ -73,6 +73,7 @@ export default {
   letter-spacing: 6px;
   color: var(--body);
   display: flex;
+  font-weight: lighter;
   justify-content: flex-end;
   margin-right: 17px;
   margin-top: -40px;
@@ -85,6 +86,7 @@ export default {
 
 .img_food img {
   width: 45%;
+  height: 300px;
   margin-right: 20px;
   object-fit: cover;
 }

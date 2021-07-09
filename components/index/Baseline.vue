@@ -140,7 +140,7 @@ export default {
   color: var(--green);
   align-items: center;
   font-style: italic;
-  font-size: 34px;
+  font-size: 44px;
 }
 
 .container_baseline p {
@@ -164,7 +164,7 @@ export default {
   align-items: center;
   color: transparent;
   font-style: italic;
-  font-size: 34px;
+  font-size: 44px;
 }
 
 .container_baseline_1 p {
