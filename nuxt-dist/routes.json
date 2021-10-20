@@ -2,73 +2,85 @@
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/Users/Nicolas/maisonblanche/pages/contact.vue",
-    "chunkName": "pages/contact"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_7589044e"
   },
   {
     "name": "evenements",
     "path": "/evenements",
-    "component": "/Users/Nicolas/maisonblanche/pages/evenements/index.vue",
-    "chunkName": "pages/evenements/index"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/evenements/index.vue",
+    "chunkName": "pages/evenements/index",
+    "_name": "_674b28ef"
   },
   {
     "name": "menu",
     "path": "/menu",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/index.vue",
-    "chunkName": "pages/menu/index"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/index.vue",
+    "chunkName": "pages/menu/index",
+    "_name": "_29d8e464"
   },
   {
     "name": "reservation",
     "path": "/reservation",
-    "component": "/Users/Nicolas/maisonblanche/pages/reservation.vue",
-    "chunkName": "pages/reservation"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/reservation.vue",
+    "chunkName": "pages/reservation",
+    "_name": "_1dd2b2fa"
   },
   {
     "name": "menu-boissons",
     "path": "/menu/boissons",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/boissons.vue",
-    "chunkName": "pages/menu/boissons"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/boissons.vue",
+    "chunkName": "pages/menu/boissons",
+    "_name": "_68658636"
   },
   {
     "name": "menu-desserts",
     "path": "/menu/desserts",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/desserts.vue",
-    "chunkName": "pages/menu/desserts"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/desserts.vue",
+    "chunkName": "pages/menu/desserts",
+    "_name": "_2c5791eb"
   },
   {
     "name": "menu-plats",
     "path": "/menu/plats",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/plats.vue",
-    "chunkName": "pages/menu/plats"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/plats.vue",
+    "chunkName": "pages/menu/plats",
+    "_name": "_3ad5c494"
   },
   {
     "name": "menu-rhum",
     "path": "/menu/rhum",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/rhum.vue",
-    "chunkName": "pages/menu/rhum"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/rhum.vue",
+    "chunkName": "pages/menu/rhum",
+    "_name": "_4e62d9ac"
   },
   {
     "name": "menu-tapas",
     "path": "/menu/tapas",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/tapas.vue",
-    "chunkName": "pages/menu/tapas"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/tapas.vue",
+    "chunkName": "pages/menu/tapas",
+    "_name": "_93e95db2"
   },
   {
     "name": "menu-vins",
     "path": "/menu/vins",
-    "component": "/Users/Nicolas/maisonblanche/pages/menu/vins.vue",
-    "chunkName": "pages/menu/vins"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/menu/vins.vue",
+    "chunkName": "pages/menu/vins",
+    "_name": "_17306916"
   },
   {
     "name": "evenements-slug",
     "path": "/evenements/:slug",
-    "component": "/Users/Nicolas/maisonblanche/pages/evenements/_slug.vue",
-    "chunkName": "pages/evenements/_slug"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/evenements/_slug.vue",
+    "chunkName": "pages/evenements/_slug",
+    "_name": "_659487a7"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/Nicolas/maisonblanche/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/nicolasroux/Downloads/maisonblanche/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4a75cd80"
   }
 ]

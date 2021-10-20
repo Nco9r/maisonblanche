@@ -2,21 +2,21 @@
   <section class="newsletter">
     <div>
       <div class="title_generate">
-         <div class="box_hr">
-        <hr class="trait" />
-        <hr class="rond" />
-         </div>
+        <div class="box_hr">
+          <hr class="trait" />
+          <hr class="rond" />
+        </div>
         <span class="subhead">Newsletter</span>
         <h2>
-          Tenez vous au courant de tous nos 
+          Tenez vous au courant de tous nos
           <span class="italic_title">événements</span>.
         </h2>
       </div>
       <div class="input_newsletter">
-          <div class="box_input">
-               <input type="text" placeholder="votre@email.fr">
-               <button>Ok</button>
-          </div>
+        <div class="box_input">
+          <input type="text" placeholder="votre@email.fr" />
+          <button>Ok</button>
+        </div>
       </div>
     </div>
   </section>
@@ -31,21 +31,21 @@ export default {}
   width: 100%;
   margin-top: -4px;
   background-color: var(--green);
-  padding-bottom: 100Px;
-  background-image: url('~assets/img/svg/16.svg'); 
+  padding-bottom: 100px;
+  background-image: url('~assets/img/svg/16.svg');
   background-size: 100%;
   background-position-y: 70px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .title_generate {
-    text-align: center; 
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .box_hr {
-    width: 100%;
-    margin: auto; 
+  width: 100%;
+  margin: auto;
 }
 
 .trait {
@@ -53,7 +53,7 @@ export default {}
   height: 50px;
   background-color: var(--white);
   border: none;
-  margin: auto!important;
+  margin: auto !important;
   justify-content: center;
   margin-left: 5px;
   margin-bottom: 10px;
@@ -66,15 +66,13 @@ export default {}
   border-radius: 50%;
   background-color: var(--white);
   border: none;
-  margin:10px auto!important;
-
+  margin: 10px auto !important;
 }
 
 .subhead {
   text-transform: uppercase;
   font-size: 12px;
   color: var(--white);
-
 }
 
 .title_generate h2 {
@@ -84,7 +82,6 @@ export default {}
   padding: 10px;
   font-weight: 700;
   color: var(--white);
-
 }
 
 .italic_title {
@@ -96,40 +93,48 @@ export default {}
 }
 
 .input_newsletter {
-    text-align: center; 
+  text-align: center;
 }
 
 .box_input {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .box_input input {
-    border: none; 
-    padding: 10px 20px;
-    outline: none; 
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
 }
 
 .box_input input::placeholder {
-    opacity: .5;
+  opacity: 0.5;
 }
 
 .box_input button {
-    padding: 10px 20px; 
-    border: none; 
-    background-color: var(--redBody); 
-    color: var(--white);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold; 
-    cursor: pointer;
-    transition: all .3s; 
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--redBody);
+  color: var(--white);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .box_input button:hover {
-    opacity: .8;
+  opacity: 0.8;
 }
 
+@media screen and (min-width: 1024px) {
+  .title_generate h2 {
+    line-height: 52px;
+    font-size: 42px;
+    max-width: 600px; 
+    margin: auto;
+  }
+}
 </style>

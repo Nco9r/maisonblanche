@@ -1,17 +1,19 @@
 <template>
   <main>
     <div class="top_bar_fixed">
-      <div class="container_items">
-        <div class="title">
-          <p>Catégories</p>
-        </div>
-        <div class="items">
-          <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
-          <nuxt-link to="/menu/plats">Plats</nuxt-link>
-          <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
-          <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
-          <nuxt-link to="/menu/vins">Vins</nuxt-link>
-          <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+      <div class="container_categorie">
+        <div class="container_items">
+          <div class="title">
+            <p>Catégories</p>
+          </div>
+          <div class="items">
+            <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
+            <nuxt-link to="/menu/plats">Plats</nuxt-link>
+            <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
+            <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+            <nuxt-link to="/menu/vins">Vins</nuxt-link>
+            <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -351,85 +353,85 @@
           <p class="price">6,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Corona 35.5cl</p>
           <span></span>
           <p class="price">6,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Bière blonde italienne</p>
           <span></span>
           <p class="price">6,00€</p>
         </div>
-         <p class="description">
+        <p class="description">
           Birra Antoniana
         </p>
       </div>
-       <div class="blackBody_1">
+      <div class="blackBody_1">
         <div class="title">
           <h2>Cocktails</h2>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Pinà colada</p>
           <span></span>
           <p class="price">10,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">London Mule</p>
           <span></span>
           <p class="price">9,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Moscow Mule</p>
           <span></span>
           <p class="price">9,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Mojito</p>
           <span></span>
           <p class="price">8,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Ti-punch</p>
           <span></span>
           <p class="price">8,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Planteur maison</p>
           <span></span>
           <p class="price">8,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Caïpirinha</p>
           <span></span>
           <p class="price">8,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Spritz</p>
           <span></span>
           <p class="price">8,00€</p>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">Americano</p>
           <span></span>
@@ -455,8 +457,6 @@
           <p class="price">6,00€</p>
         </div>
       </div>
-      
-
     </section>
     <Newsletter />
   </main>
@@ -698,5 +698,42 @@ export default {
 .accompagnement_green p {
   color: var(--green);
   font-size: lighter;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 181px 0 30px 0;
+    background-image: url('~assets/img/jpg/back_bois.png');
+    background-repeat: repeat;
+    background-size: 20%;
+  }
+
+  .container_categorie {
+    background-color: var(--background);
+    margin-bottom: 20px;
+  }
+
+  .container_items {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+  }
+
+  .elements_menu {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 700px;
+    margin: auto;
+  }
 }
 </style>

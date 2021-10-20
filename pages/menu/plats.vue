@@ -1,21 +1,27 @@
 <template>
   <main>
     <div class="top_bar_fixed">
-      <div class="container_items">
-        <div class="title">
-          <p>Catégories</p>
-        </div>
-        <div class="items">
-          <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
-          <nuxt-link to="/menu/plats">Plats</nuxt-link>
-          <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
-          <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
-          <nuxt-link to="/menu/vins">Vins</nuxt-link>
-          <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+      <div class="container_categorie">
+        <div class="container_items">
+          <div class="title">
+            <p>Catégories</p>
+          </div>
+          <div class="items">
+            <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
+            <nuxt-link to="/menu/plats">Plats</nuxt-link>
+            <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
+            <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+            <nuxt-link to="/menu/vins">Vins</nuxt-link>
+            <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+          </div>
         </div>
       </div>
     </div>
     <section class="menu">
+      <div class="img">
+        <img src="~assets/img/svg/7.svg" alt="">
+        <img src="~assets/img/svg/1.svg" alt="">
+      </div>
       <div class="greenBackground">
         <div class="title">
           <h2>Insalata</h2>
@@ -355,7 +361,6 @@ export default {
 </script>
 
 <style scoped>
-
 .top_bar_fixed {
   position: fixed;
   right: 0;
@@ -383,10 +388,14 @@ export default {
   font-size: 14px;
 }
 
+.img {
+  display: none;
+}
+
 .items {
   display: flex;
   margin-top: 10px;
-    padding-bottom: 15px;
+  padding-bottom: 15px;
   overflow-x: scroll;
   flex-flow: row nowrap;
 }
@@ -405,7 +414,7 @@ export default {
 }
 
 .menu {
-  padding: 150px 0 30px 0;
+  padding: 12px 0 30px 0;
   background-image: url('~assets/img/jpg/back_bois.png');
   background-repeat: repeat;
   background-size: 100%;
@@ -522,7 +531,7 @@ export default {
 
 .elements_menu .price {
   color: var(--black);
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .content_menu .description {
@@ -549,5 +558,74 @@ export default {
 .accompagnement_green p {
   color: var(--green);
   font-size: lighter;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 180px 0 30px 0;
+    background-image: url('~assets/img/jpg/back_bois.png');
+    background-repeat: repeat;
+    background-size: 20%;
+  }
+
+  .img {
+    display: flex; 
+  }
+
+  .img img:nth-child(1) {
+    width: 420px;
+    top: 220px;
+    position: fixed;
+    mix-blend-mode:difference;
+    left: -180Px;
+  }
+
+  .img img:nth-child(2) {
+    width: 370px;
+    top: 520px;
+    position: fixed;
+    mix-blend-mode:difference;
+    right: -180Px;
+    transform: rotate(180deg)
+  }
+
+  .container_categorie {
+    background-color: var(--background)!important;
+    z-index: 101;
+  }
+
+  .container_items {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+  }
+
+  .accompagnement {
+    max-width: 700px; 
+    margin: auto;
+  }
+
+  .accompagnement_green {
+    max-width: 700px; 
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  .elements_menu {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 700px;
+    margin: auto;
+  }
 }
 </style>

@@ -358,4 +358,16 @@ input[type='checkbox' i]:checked::after {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (min-width: 1024px) {
+    .reservation {
+      display: flex; 
+      flex-flow: column; 
+    }
+    
+    .block_left {
+      max-width: 600px; 
+      margin: auto;
+    }
+}
 </style>

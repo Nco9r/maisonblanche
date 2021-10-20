@@ -48,7 +48,7 @@
         </div>
         <div class="block_left">
           <img src="~assets/img/svg/coin_round.svg" alt="" />
-          <img src="~assets/img/jpg/mb.jpg" alt="" />
+          <img src="~assets/img/jpg/bar.jpg" alt="" />
           <img src="~assets/img/svg/coin_round.svg" alt="" />
         </div>
       </div>
@@ -73,7 +73,7 @@ strong {
   color: #202020;
 }
 .intro {
-  margin: 200px 20px 50px 20px;
+  margin: 200px 20px 10px 20px;
 }
 
 .trait {
@@ -229,16 +229,15 @@ strong {
   .block_right {
     width: 800px;
   }
-  .block_left img {
-    transition: all 0.3s;
-  }
-
-  .block_left img:hover {
-    width: 92%;
+  .block_left img:nth-child(2) {
+    height: 330px;
+    object-fit: cover;
   }
 
   .block_left img:nth-child(3) {
-    bottom: 20px;
+    bottom: -80px;
+    position: absolute;
+    left: 0;
   }
 
   .block_left img:nth-child(1) {
@@ -255,7 +254,7 @@ strong {
   }
 
   .block_left img:nth-child(3) {
-    bottom: -25px;
+    bottom: 55px;
   }
 
   .block_right {

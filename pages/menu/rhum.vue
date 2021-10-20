@@ -1,17 +1,19 @@
 <template>
   <main>
     <div class="top_bar_fixed">
-      <div class="container_items">
-        <div class="title">
-          <p>Catégories</p>
-        </div>
-        <div class="items">
-          <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
-          <nuxt-link to="/menu/plats">Plats</nuxt-link>
-          <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
-          <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
-          <nuxt-link to="/menu/vins">Vins</nuxt-link>
-          <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+      <div class="container_categorie">
+        <div class="container_items">
+          <div class="title">
+            <p>Catégories</p>
+          </div>
+          <div class="items">
+            <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
+            <nuxt-link to="/menu/plats">Plats</nuxt-link>
+            <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
+            <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+            <nuxt-link to="/menu/vins">Vins</nuxt-link>
+            <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -523,5 +525,42 @@ export default {
 .accompagnement_green p {
   color: var(--green);
   font-size: lighter;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 181px 0 30px 0;
+    background-image: url('~assets/img/jpg/back_bois.png');
+    background-repeat: repeat;
+    background-size: 20%;
+  }
+
+  .container_categorie {
+    background-color: var(--background);
+    margin-bottom: 20px;
+  }
+
+  .container_items {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+  }
+
+  .elements_menu {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 700px;
+    margin: auto;
+  }
 }
 </style>

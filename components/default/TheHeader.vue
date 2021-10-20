@@ -97,6 +97,49 @@
         </transition>
       </div>
     </div>
+    <div class="header_desktop_container">
+    <div class="header_desktop">
+       <div class="top_bar_map">
+        <div class="block_map">
+          <a
+            href="https://ul.waze.com/ul?place=ChIJmfn6fu6dVA0R0UWoZ6Jm8Us&ll=44.57174810%2C-1.22199570&navigate=yes&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
+            target="_blank"
+          >
+            <img src="~assets/img/svg/map.svg" alt="" />
+            <p>Aller à la Maison Blanche</p>
+          </a>
+          <span></span>
+          <a href="tel:+33675483665">
+            <img src="~assets/img/svg/phone_mb.svg" alt="" />
+            <p>Contact</p>
+          </a>
+        </div>
+      </div>
+      <div class="top_bar_header_desktop">
+        <div class="block_header">
+        <div class="logo_header">
+          <img src="~assets/img/svg/logo_mb_header.svg" alt="" />
+        </div>
+        <div class="items_desktop">
+          <nuxt-link to='/'>Restaurant</nuxt-link>
+          <p @click="openMenuD = !openMenuD">Menu</p>
+           <div class="items_menu_desktop" v-if="openMenuD" @click="openMenuD = !openMenuD">
+          <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
+                <nuxt-link to="/menu/plats">Plats</nuxt-link>
+                <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+                <nuxt-link to="/menu/vins">Vins</nuxt-link>
+                <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+        </div>
+          <nuxt-link to='/evenements'>Événements</nuxt-link>
+          <nuxt-link to='/contact'>Contact</nuxt-link>
+          <nuxt-link to='/reservation' class="cta_desktop">Réservez</nuxt-link>
+        </div>
+         
+ 
+      </div>
+      </div>
+    </div>
+    </div>
   </header>
 </template>
 
@@ -105,6 +148,7 @@ export default {
   data() {
     return {
       openMenu: false,
+      openMenuD: false,
       itemMenu: false
     }
   }
@@ -112,6 +156,10 @@ export default {
 </script>
 
 <style scoped>
+
+ .header_desktop_container {
+      display: none;
+    }
 .header_mobile {
   position: fixed;
   top: 0;
@@ -411,5 +459,132 @@ export default {
   margin-top: -10px !important;
 
   margin-left: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header_mobile {
+      display: none;
+    }
+
+    .header_desktop_container {
+      display: flex;
+    }
+
+    .header_desktop {
+      position: fixed;
+      top: 0; 
+      left: 0;
+      right: 0;
+      z-index: 101
+    }
+    .block_header {
+       max-width: 1000px;
+      margin: auto;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      padding-top: 30px;
+    }
+
+    .items_desktop {
+      margin-bottom: 20px;
+      position: relative;
+      display: flex; 
+      
+    }
+
+    .items_menu_desktop {
+      position: absolute;
+      top: 35px;
+      background-color: var(--white);
+      width: 600px;
+      display: flex; 
+      flex-flow: row wrap;
+      left: -50px;
+      justify-content: center;
+      height: 50px;
+      align-items: center;
+      border-radius: 20px;
+      z-index: 100;
+    }
+
+    .items_menu_desktop a {
+      color: var(--black)!important;
+      font-size: 16px!important;
+    }
+
+    .logo_header {
+      margin-top: -20px;
+    }
+
+    .items_desktop a {
+      color: var(--redBody);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 30px;
+      font-size: 18Px;
+      transition: all .3s ease-in-out;
+    }
+
+    .items_desktop a:hover {
+      color: var(--black);
+      
+    }
+
+    .top_bar_header_desktop {
+  background-color: var(--background);
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 30;
+}
+
+    .items_desktop p {
+      color: var(--redBody);
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer; 
+      margin: 0 30px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18Px;
+      transition: all .3s ease-in-out;
+    }
+
+    .items_desktop p:hover {
+      color: var(--black);
+      
+    }
+
+
+    .items_desktop .cta_desktop {
+      background-color: var(--redBody); 
+      color: var(--white);
+      margin-top: -10px;
+      padding: 10px 32px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header_mobile {
+      display: none;
+    }
+
+    .block_map{
+      max-width: 1100px;
+      margin: auto;
+      
+    }
+
+    .block_map p {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .block_header {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      padding-top: 30px;
+    }
 }
 </style>

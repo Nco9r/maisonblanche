@@ -162,7 +162,7 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .container_footer {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0px auto;
   }
 
@@ -174,7 +174,7 @@ hr {
   }
 
   .items {
-    width: 280px;
+    width: 220px;
     padding: 0px;
   }
 

@@ -73,11 +73,7 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 769px) {
-  body {
-    display: none;
-  }
-}
+
 
 
 

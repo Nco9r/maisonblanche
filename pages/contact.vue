@@ -38,6 +38,14 @@
                 required
               ></textarea>
             </div>
+             <div class="label_check">
+              <input type="checkbox" />
+              <p>
+                Je consens à ce que les données que j'ai soumises soient
+                collectées et stockées en vue d'être utilisées pour traiter ma
+                demande de contact.
+              </p>
+            </div>
             <div class="label_check">
               <input type="checkbox" required @click="checkbox = !checkbox" />
               <p>

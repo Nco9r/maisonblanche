@@ -1,9 +1,9 @@
 <template>
   <section class="pictures">
     
-        <img class="first" src="~assets/img/jpg/pizza_1.jpeg" alt="" />
-        <img class="second_p" src="~assets/img/jpg/tipunch.jpeg" alt="" />
-        <img src="~assets/img/jpg/terrasse.jpeg" alt="" />
+        <img class="first" src="~assets/img/jpg/plats_2.jpg" alt="" />
+        <img class="second_p" src="~assets/img/jpg/bar_2.jpg" alt="" />
+        <img src="~assets/img/jpg/epicerie.jpg" alt="" />
    
   
       

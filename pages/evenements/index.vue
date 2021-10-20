@@ -137,7 +137,7 @@ span {
 .evenements_cards {
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: var(--white);
+
   box-shadow: 2Px 2Px 8px rgb(241, 241, 241)
 }
 
@@ -146,7 +146,7 @@ span {
   color: var(--black);
   margin: auto;
   z-index: 1;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .evenement .img img {

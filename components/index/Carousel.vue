@@ -44,13 +44,13 @@
         <img src="~assets/img/jpg/pizza-tartuffo.jpg" alt="" />
       </div>
       <div class="block_img">
-        <img src="~assets/img/jpg/pizza_1.jpeg" alt="" />
+        <img src="~assets/img/jpg/plats_1.jpg" alt="" />
       </div>
       <div class="block_img">
-        <img src="~assets/img/jpg/tipunch.jpeg" alt="" />
+        <img src="~assets/img/jpg/plats_2.jpg" alt="" />
       </div>
       <div class="block_img">
-        <img src="~assets/img/jpg/terrasse.jpeg" alt="" />
+        <img src="~assets/img/jpg/petanque.jpg" alt="" />
       </div>
     </VueSlickCarousel>
   </section>
@@ -99,7 +99,7 @@ strong {
   margin-right: 10px;
 }
 .title_generate {
-  text-align: center;
+  text-align: left;
   padding: 0 30px;
 }
 
@@ -108,7 +108,7 @@ strong {
   height: 50px;
   background-color: var(--redBody);
   border: none;
-  margin: auto;
+  margin-left: 5px;
   display: flex;
   margin-bottom: 10px;
 }
@@ -116,7 +116,7 @@ strong {
 .rond {
   width: 10px;
   height: 10px;
-  margin: auto;
+
 
   border-radius: 50%;
   background-color: var(--green);
@@ -225,6 +225,8 @@ strong {
 
 .block_slide .prev {
   width: 40px;
+    pointer-events: all;
+cursor: pointer;
   margin-right: 10px;
   height: 40px;
   border: 1px solid var(--redBody);
@@ -238,6 +240,8 @@ strong {
 .block_slide .next {
   width: 40px;
   height: 40px;
+    pointer-events: all;
+
   border: 1px solid var(--redBody);
   border-radius: 50%;
   display: flex;
@@ -247,21 +251,37 @@ strong {
 
 @media screen and (min-width: 1024px) {
   .carousel_section {
-    max-width: 1000px;
-    margin: 150px auto;
+    max-width: 1100px;
+    margin: 250px auto;
+    position: relative;
+
+  }
+  .block_slide {
+    max-width: 300px;
+    pointer-events: all;
+  }
+
+  .carousel .slick-slider {
+    z-index: 1;
+  }
+
+  .container_carousel {
+    margin-bottom: -620px;
+    pointer-events: all;
+    margin-left: 50px;
+    z-index: 90;
   }
 
   .title_generate {
-    text-align: center;
-  width: 1000px;
-  margin: auto;
+    text-align: left;
+  width: 700px;
     background-color: var(--background);
   }
 
   .block_right p {
-    width: 700px;
-    text-align: center;
-    margin: 20px auto;
+    width: 500px;
+    text-align: left;
+    margin: 20px 0;
   }
 
   .title_generate h2 {
@@ -274,13 +294,24 @@ strong {
     font-size: 56px;
   }
 
+
+.block_right {
+  margin-bottom: -100px;
+}
   .block_img {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     padding-right: 20px;
+    margin-left: 700px;
+    pointer-events: fill;
+
   }
 
   .block_img img {
-    width: 100%;
+    width: 40%;
+    z-index: 1;
+    height: 550px;
+    object-fit: cover;
     display: block;
   }
 }

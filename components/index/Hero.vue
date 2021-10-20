@@ -13,8 +13,8 @@
         </h1>
       </div>
       <div class="img_food">
-        <img class="mobile" src="~assets/img/jpg/1.jpg" alt="" />
-        <img class="second " src="~assets/img/jpg/4.jpg" alt="" />
+        <img class="mobile" src="~assets/img/jpg/hero.jpg" alt="" />
+        <img class="second " src="~assets/img/jpg/plats_1.jpg" alt="" />
         <img
           class="desktop"
           src="~assets/img/jpg/restaurant_terasse.jpg"
@@ -194,7 +194,7 @@ export default {
 
   .img_food img:nth-child(2) {
     position: absolute;
-    top: -550px;
+    top: -450px;
     right: 0;
     width: 25%;
   }

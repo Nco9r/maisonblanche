@@ -56,14 +56,13 @@ strong {
 }
 
 .bar {
-  margin: 50px 20px 100px 20px;
+  margin: 0px 20px 100px 20px;
 }
 .trait {
   width: 1px;
   height: 50px;
   background-color: var(--redBody);
   border: none;
-  margin: auto; 
   margin-bottom: 10px;
 }
 
@@ -73,7 +72,6 @@ strong {
   border-radius: 50%;
   background-color: var(--green);
   border: none;
-  margin: auto;
   margin-bottom: 10px;
 }
 
@@ -83,7 +81,7 @@ strong {
 }
 
 .title_generate {
-  text-align: center; 
+  text-align: left; 
 }
 
 .title_generate h2 {
@@ -115,6 +113,10 @@ strong {
   font-size: 14px;
   text-align: left;
   color: var(--body);
+}
+
+a {
+  text-decoration: none;
 }
 
 .cta_bar {
@@ -197,6 +199,10 @@ strong {
     margin: 150px auto;
   }
 
+  .title_generate {
+    text-align: left;
+  }
+
   .block_right {
     width: 600px;
   }
@@ -218,22 +224,22 @@ strong {
 }
 
 .block_left img {
-  width: 70%;
+  width: 90%;
   display: flex;
   margin: auto;
 }
 
 .block_left img:nth-child(1) {
   position: absolute;
-  right: 50px;
-  top: -35px;
+  right: 0px;
+  top: -25px;
   width: 70px;
 }
 
 .block_left img:nth-child(3) {
   position: absolute;
-  left: 50px;
-  bottom: -35px;
+  left: 0px;
+  bottom: -25px;
   transform: rotate(180deg);
   width: 70px;
 }
