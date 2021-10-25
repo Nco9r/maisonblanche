@@ -192,8 +192,8 @@ strong {
 
 @media screen and (min-width: 1024px) {
   .intro {
-    max-width: 1000px;
-    margin: 200px auto;
+    max-width: 900px;
+    margin: 200px auto 50px auto;
   }
 
   .title_generate {
@@ -227,7 +227,7 @@ strong {
   }
 
   .block_right {
-    width: 800px;
+    width: 400px;
   }
   .block_left img:nth-child(2) {
     height: 330px;
@@ -235,7 +235,7 @@ strong {
   }
 
   .block_left img:nth-child(3) {
-    bottom: -80px;
+    bottom: 80px;
     position: absolute;
     left: 0;
   }

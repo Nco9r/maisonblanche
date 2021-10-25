@@ -251,6 +251,75 @@ cursor: pointer;
 
 @media screen and (min-width: 1024px) {
   .carousel_section {
+    max-width: 900px;
+    margin: 250px auto;
+    position: relative;
+
+  }
+  .block_slide {
+    max-width: 300px;
+    margin-top: 130px;
+    pointer-events: all;
+  }
+
+  .carousel .slick-slider {
+    z-index: 1;
+  }
+
+  .container_carousel {
+    margin-bottom: -620px;
+    pointer-events: all;
+    margin-left: 50px;
+    z-index: 90;
+  }
+
+  .title_generate {
+    text-align: left;
+  width: 700px;
+    background-color: var(--background);
+  }
+
+  .block_right p {
+    width: 500px;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  .title_generate h2 {
+    line-height: 72px;
+    font-size: 52px;
+    margin: 20px auto;
+  }
+
+  .italic_title {
+    font-size: 56px;
+  }
+
+
+.block_right {
+  margin-bottom: -100px;
+  width: 100Px;
+}
+  .block_img {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-left: 700px;
+    pointer-events: fill;
+
+  }
+
+  .block_img img {
+    width: 20%;
+    z-index: 1;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel_section {
     max-width: 1100px;
     margin: 250px auto;
     position: relative;

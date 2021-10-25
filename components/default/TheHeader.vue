@@ -479,7 +479,7 @@ export default {
       z-index: 101
     }
     .block_header {
-       max-width: 1000px;
+       max-width: 900px;
       margin: auto;
       display: flex;
       align-items: center; 

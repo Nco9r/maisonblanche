@@ -201,11 +201,12 @@ hr {
 @media screen and (min-width: 1024px) {
   .evenements {
     max-width: 900px;
-    margin: 100px auto;
+    margin: 150px auto;
   }
   .box_cards {
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
   }
 
   .evenements_cards {

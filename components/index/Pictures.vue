@@ -120,7 +120,7 @@ export default {
 @media screen and (min-width: 1024px) {
   .pictures {
     max-width: 1200px;
-    margin: 0 auto 300px auto;
+    margin: 0 auto 150px auto;
     height: 700px;
   
   }
