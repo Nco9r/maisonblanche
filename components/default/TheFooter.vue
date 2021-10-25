@@ -34,7 +34,7 @@
       </div>
       <hr />
       <div class="container_logo">
-        <nuxt-link to="/reservation"
+        <nuxt-link to="/contact#reserve"
           ><div class="booking">
             <button>Réservez</button>
           </div>

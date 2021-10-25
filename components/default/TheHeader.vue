@@ -62,7 +62,7 @@
               >
             </div>
             <div class="cta_header" @click="openMenu = !openMenu">
-              <nuxt-link to="/reservation">
+              <nuxt-link to="/contact#reserve">
                 <button>
                   Réserver
                 </button>
@@ -132,7 +132,7 @@
         </div>
           <nuxt-link to='/evenements'>Événements</nuxt-link>
           <nuxt-link to='/contact'>Contact</nuxt-link>
-          <nuxt-link to='/reservation' class="cta_desktop">Réservez</nuxt-link>
+          <nuxt-link to='/contact' class="cta_desktop">Réservez</nuxt-link>
         </div>
          
  
@@ -177,6 +177,7 @@ export default {
 .block_map {
   display: flex;
   flex-flow: row wrap;
+  overflow-x: hidden;
 }
 
 .block_map a {
@@ -580,6 +581,32 @@ export default {
 
     .block_header {
       max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .header_mobile {
+      display: none;
+    }
+
+    .block_map{
+      max-width: 1500px;
+      margin: auto;
+      
+    }
+
+    .block_map p {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .block_header {
+      max-width: 1500px;
       margin: auto;
       display: flex;
       align-items: center; 

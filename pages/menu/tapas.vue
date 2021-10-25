@@ -1,20 +1,20 @@
 <template>
   <main>
     <div class="top_bar_fixed">
-      <div class="container_categorie">
-      <div class="container_items">
-        <div class="title">
-          <p>Catégories</p>
+     <div class="container_categorie">
+        <div class="container_items">
+          <div class="title">
+            <p>Catégories</p>
+          </div>
+          <div class="items">
+            <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
+            <nuxt-link to="/menu/plats">Plats</nuxt-link>
+            <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
+            <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+            <nuxt-link to="/menu/vins">Vins</nuxt-link>
+            <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+          </div>
         </div>
-        <div class="items">
-          <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
-          <nuxt-link to="/menu/plats">Plats</nuxt-link>
-          <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
-          <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
-          <nuxt-link to="/menu/vins">Vins</nuxt-link>
-          <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
-        </div>
-      </div>
       </div>
     </div>
     <section class="menu">
@@ -142,11 +142,6 @@ export default {
 </script>
 
 <style scoped>
-.nuxt-link-active {
-  color: var(--redBody) !important;
-  font-weight: bold !important;
-}
-
 .top_bar_fixed {
   position: fixed;
   right: 0;
@@ -159,7 +154,7 @@ export default {
 
 .container_items {
   height: 110px;
-  overflow: hidden;
+  overflow-x: scroll;
   background-color: var(--background);
   display: flex;
   flex-flow: column nowrap;
@@ -174,11 +169,15 @@ export default {
   font-size: 14px;
 }
 
+.img {
+  display: none;
+}
+
 .items {
   display: flex;
   margin-top: 10px;
   padding-bottom: 15px;
-  overflow-x: auto;
+  overflow-x: scroll;
   flex-flow: row nowrap;
 }
 
@@ -186,35 +185,30 @@ export default {
   margin-right: 10px;
   text-decoration: none;
   color: var(--black);
-  margin-bottom: 10px;
   font-weight: bold;
   font-family: 'Noto', serif;
 }
 
-.item_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-}
-
-.item_img img {
-  width: 100%;
+.nuxt-link-active {
+  color: var(--redBody) !important;
+  font-weight: bold !important;
 }
 
 .menu {
-  padding: 150px 0 30px 0;
+  padding: 12px 0 30px 0;
   background-image: url('~assets/img/jpg/back_bois.png');
   background-repeat: repeat;
   background-size: 100%;
+  margin-top: 138px;
+
 }
 
 .redBackground {
   background-color: var(--redBody);
   padding: 20px;
-  margin-top: 30px;
   border-top: 2px solid var(--black);
+  margin-top: 30px;
+
   margin-bottom: 20px;
   border-bottom: 2px solid var(--black);
 }
@@ -310,19 +304,18 @@ export default {
   color: var(--black);
   font-weight: bold;
 }
-/* 
+
 .elements_menu span {
   height: 1px;
   margin-right: 10px;
-  width: 100%;
   border: none;
-  border-bottom: 1px dotted var(--body);
   margin-bottom: 7px;
-} */
+  background-color: var(--black);
+}
 
 .elements_menu .price {
   color: var(--black);
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .content_menu .description {
@@ -351,43 +344,158 @@ export default {
   font-size: lighter;
 }
 
-@media screen and (min-width: 1024px){
-   .menu {
-  padding: 181px 0 30px 0;
-  background-image: url('~assets/img/jpg/back_bois.png');
-  background-repeat: repeat;
-  background-size: 20%;
-  position: relative;
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 180px 0 30px 0;
+    background-image: url('~assets/img/jpg/back_bois.png');
+    background-repeat: repeat;
+    background-size: 20%;
+    margin-top: 1px;
+
+  }
+
+  .img {
+    display: flex; 
+  }
+
+  .img img:nth-child(1) {
+    width: 420px;
+    top: 220px;
+    position: fixed;
+    mix-blend-mode:difference;
+    left: -180Px;
+  }
+
+  .img img:nth-child(2) {
+    width: 370px;
+    top: 520px;
+    position: fixed;
+    mix-blend-mode:difference;
+    right: -180Px;
+    transform: rotate(180deg)
+  }
+
+  .container_categorie {
+    background-color: var(--background)!important;
+    z-index: 101;
+    overflow: hidden;
+  }
+
+  .container_items {
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+padding-bottom: 70px;
+    padding-top: 70px;
+
+
+  }
+
+  .items {
+    overflow: hidden;
+
+  }
+
+  .accompagnement {
+    max-width: 700px; 
+    margin: auto;
+  }
+
+  .accompagnement_green {
+    max-width: 700px; 
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  .elements_menu {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 700px;
+    margin: auto;
+  }
+
 }
 
-.container_categorie {
-  background-color: var(--background);
-  margin-bottom: 20px;
-  pointer-events: all;
-}
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding: 180px 0 30px 0;
+    background-image: url("~assets/img/jpg/back_bois.png");
+    background-repeat: repeat;
+    background-size: 20%;
+    margin-top: 1px;
+  }
 
-.container_items {
-  max-width: 700px;
-  margin: auto;
-  padding-top: 70px;
-  margin-bottom: 50px;
-  padding-bottom: 70px;
-}
+  .img {
+    display: flex;
+  }
 
-.elements_menu {
-  max-width: 700px;
-  margin: auto;
-}
+  .img img:nth-child(1) {
+    width: 420px;
+    top: 220px;
+    position: fixed;
+    mix-blend-mode: difference;
+    left: -180px;
+  }
 
-.elements_menu .content {
-  font-size: 16px;
-  line-height: 32px;
+  .img img:nth-child(2) {
+    width: 370px;
+    top: 520px;
+    position: fixed;
+    mix-blend-mode: difference;
+    right: -180px;
+    transform: rotate(180deg);
+  }
 
-}
+  .container_categorie {
+    background-color: var(--background) !important;
+    z-index: 101;
+    overflow: hidden;
+  }
 
-.content_menu .description {
-  max-width: 700px;
-  margin: auto;
-}
+  .container_items {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .items {
+    overflow: hidden;
+  }
+
+  .accompagnement {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .accompagnement_green {
+    max-width: 1100px;
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  .elements_menu {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 1100px;
+    margin: auto;
+  }
 }
 </style>

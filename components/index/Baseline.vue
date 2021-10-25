@@ -122,6 +122,7 @@ export default {
 <style scoped>
 .baseline {
   margin: -20px 0 -50px 0;
+  overflow-x: hidden;
 }
 
 .container_baseline {

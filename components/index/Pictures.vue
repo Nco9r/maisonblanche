@@ -50,7 +50,7 @@ export default {
   height: 500px;
   margin-bottom: 50px;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden!important;
   margin: auto;
   display: flex; 
   justify-content: center; 

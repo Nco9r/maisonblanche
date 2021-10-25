@@ -1,10 +1,8 @@
 <template>
   <main>
-    <breadcrumb/>
     <section class="evenements">
       <div class="container_evenements">
         <div class="title_generate">
-
           <span class="subhead">agenda</span>
           <h2>
             Retrouvez tous nos
@@ -18,30 +16,37 @@
             </p>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="number_evenement">
-          <p>Il y <span>{{evenements.length }}</span> événements à venir à la Maison Blanche.</p>
-          <p v-if="evenements.length === 0">Il n'y a aucun événements à venir à la Maison Blanche.</p>
+          <p>
+            Il y <span>{{ evenements.length }}</span> événements à venir à la
+            Maison Blanche.
+          </p>
+          <p v-if="evenements.length === 0">
+            Il n'y a aucun événements à venir à la Maison Blanche.
+          </p>
         </div>
-        <hr>
+        <hr />
       </div>
-      <div
-        class="evenements_cards"
-        v-for="evenement in evenements"
-        :key="evenement.id"
-      >
-        <div class="evenement">
-          <div class="img">
-            <img :src="evenement.imgUrl" alt="" />
-          </div>
-          <div class="content">
-          <div class="content-title">
-            <h2>{{ evenement.title }}</h2>
-             <p>{{ evenement.date }}</p>
-          </div>
-          <div class="content_evenements">
-            <p>{{ evenement.description }}</p>
-          </div>
+      <div class="box_cards">
+        <div
+          class="evenements_cards"
+          v-for="evenement in evenements"
+          :key="evenement.id"
+        >
+          <div class="evenement">
+            <div class="img">
+              <img :src="evenement.imgUrl" alt="" />
+            </div>
+            <div class="content">
+              <div class="content-title">
+                <h2>{{ evenement.title }}</h2>
+                <p>{{ evenement.date }}</p>
+              </div>
+              <div class="content_evenements">
+                <p>{{ evenement.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -51,38 +56,32 @@
 </template>
 
 <script>
-import Newsletter from '../../components/default/Newsletter'
-import Breadcrumb from '../../components/default/Breadcrumb'
-
+import Newsletter from "../../components/default/Newsletter";
 
 export default {
   async asyncData({ $strapi }) {
-    const evenements = await $strapi.$evenements.find()
-    return { evenements }
+    const evenements = await $strapi.$evenements.find();
+    return { evenements };
   },
 
   components: {
-    Newsletter,
-    Breadcrumb
+    Newsletter
   },
   data() {
     return {
-      api_Url: 'https://api.rouxnicolas.fr/'
-    }
-  },
-  
-}
+      api_Url: "https://api.rouxnicolas.fr/"
+    };
+  }
+};
 </script>
 
 <style scoped>
-
-
 span {
   color: var(--redBody);
   font-weight: bold;
 }
 .evenements {
-  margin: 10px 20px 50px 20px;
+  margin: 110px 20px 50px 20px;
 }
 .title_generate {
   margin-top: 30px;
@@ -116,7 +115,7 @@ span {
 }
 
 .italic_title {
-  font-family: 'italic-title', sans-serif;
+  font-family: "italic-title", sans-serif;
   text-transform: lowercase;
   font-size: 35px;
   color: var(--green);
@@ -137,12 +136,10 @@ span {
 .evenements_cards {
   margin-top: 20px;
   margin-bottom: 20px;
-
-  box-shadow: 2Px 2Px 8px rgb(241, 241, 241)
+  box-shadow: 2px 2px 8px rgb(241, 241, 241);
 }
 
-
-.evenement .date p{
+.evenement .date p {
   color: var(--black);
   margin: auto;
   z-index: 1;
@@ -173,10 +170,10 @@ span {
 }
 
 .content-title {
-  display: flex; 
+  display: flex;
   padding: 10px;
   margin-bottom: 10px;
-  flex-flow: row; 
+  flex-flow: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -190,7 +187,6 @@ span {
   padding: 0 10px 10px 10px;
 }
 
-
 hr {
   width: 100%;
   height: 1px;
@@ -200,5 +196,70 @@ hr {
 }
 .number_evenement p {
   color: var(--black);
+}
+
+@media screen and (min-width: 1024px) {
+  .evenements {
+    max-width: 900px;
+    margin: 100px auto;
+  }
+  .box_cards {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .evenements_cards {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .evenements {
+    max-width: 1100px;
+    margin: 150px auto;
+  }
+
+  .title_generate h2 {
+    font-size: 42px;
+    width: 500px;
+    line-height: 56px;
+  }
+  .italic_title {
+    font-family: "italic-title", sans-serif;
+    text-transform: lowercase;
+    font-size: 54px;
+    color: var(--green);
+    font-weight: 500;
+  }
+
+  .box_cards {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .evenement .img img {
+    height: 400px;
+  }
+
+  .evenements_cards {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .evenements {
+    max-width: 1500px;
+    margin: 150px auto;
+  }
+  .box_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+  }
+
+  .evenements_cards {
+    width: 45%;
+  }
 }
 </style>

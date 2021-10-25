@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="top_bar_fixed">
-      <div class="container_categorie">
+       <div class="container_categorie">
         <div class="container_items">
           <div class="title">
             <p>Catégories</p>
@@ -320,11 +320,6 @@ export default {
 </script>
 
 <style scoped>
-.nuxt-link-active {
-  color: var(--redBody) !important;
-  font-weight: bold !important;
-}
-
 .top_bar_fixed {
   position: fixed;
   right: 0;
@@ -352,6 +347,10 @@ export default {
   font-size: 14px;
 }
 
+.img {
+  display: none;
+}
+
 .items {
   display: flex;
   margin-top: 10px;
@@ -373,36 +372,30 @@ export default {
   font-weight: bold !important;
 }
 
-.item_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-}
-
-.item_img img {
-  width: 100%;
-}
-
 .menu {
-  padding: 150px 0 30px 0;
+  padding: 12px 0 30px 0;
   background-image: url('~assets/img/jpg/back_bois.png');
   background-repeat: repeat;
   background-size: 100%;
+  margin-top: 158px;
 }
 
-.rhumBackground {
+.redBackground {
+  background-color: var(--redBody);
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: -10px;
+  border-top: 2px solid var(--black);
+
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--black);
 }
 
-.rhumBackground .title h2 {
-  color: var(--green-rhum);
+.redBackground .title h2 {
+  text-align: center;
+  color: var(--white);
   font-size: 24px;
   font-weight: bold;
   text-transform: none;
+  font-family: 'italic-title';
 }
 
 .redBackground_1 {
@@ -496,9 +489,19 @@ export default {
   background-color: var(--black);
 }
 
+ .title h2 {
+
+  color: var(--green);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: none;
+  margin: 15px 15px;
+  font-family: 'Noto';
+}
+
 .elements_menu .price {
   color: var(--black);
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .content_menu .description {
@@ -529,23 +532,69 @@ export default {
 
 @media screen and (min-width: 1024px) {
   .menu {
-    padding: 181px 0 30px 0;
+    padding: 180px 0 30px 0;
     background-image: url('~assets/img/jpg/back_bois.png');
     background-repeat: repeat;
     background-size: 20%;
+    margin-top: 50px;
+  }
+
+  .img {
+    display: flex; 
+  }
+
+  .img img:nth-child(1) {
+    width: 420px;
+    top: 220px;
+    position: fixed;
+    mix-blend-mode:difference;
+    left: -180Px;
+  }
+
+  .img img:nth-child(2) {
+    width: 370px;
+    top: 520px;
+    position: fixed;
+    mix-blend-mode:difference;
+    right: -180Px;
+    transform: rotate(180deg)
   }
 
   .container_categorie {
-    background-color: var(--background);
-    margin-bottom: 20px;
+    background-color: var(--background)!important;
+    z-index: 101;
+    overflow: hidden;
   }
 
   .container_items {
     max-width: 700px;
     margin: auto;
+    overflow: hidden;
+padding-bottom: 70px;
     padding-top: 70px;
-    margin-bottom: 50px;
-    padding-bottom: 70px;
+
+
+  }
+
+  .items {
+    overflow: hidden;
+
+  }
+
+  .accompagnement {
+    max-width: 700px; 
+    margin: auto;
+  }
+
+  .accompagnement_green {
+    max-width: 700px; 
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  .title h2 {
+       max-width: 700px;
+    margin:30px auto;
   }
 
   .elements_menu {
@@ -561,6 +610,86 @@ export default {
   .content_menu .description {
     max-width: 700px;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding: 180px 0 30px 0;
+    background-image: url("~assets/img/jpg/back_bois.png");
+    background-repeat: repeat;
+    background-size: 20%;
+    margin-top: 1px;
+  }
+
+  .img {
+    display: flex;
+  }
+
+  .img img:nth-child(1) {
+    width: 420px;
+    top: 220px;
+    position: fixed;
+    mix-blend-mode: difference;
+    left: -180px;
+  }
+
+  .img img:nth-child(2) {
+    width: 370px;
+    top: 520px;
+    position: fixed;
+    mix-blend-mode: difference;
+    right: -180px;
+    transform: rotate(180deg);
+  }
+
+  .container_categorie {
+    background-color: var(--background) !important;
+    z-index: 101;
+    overflow: hidden;
+  }
+
+  .container_items {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .items {
+    overflow: hidden;
+  }
+
+  .accompagnement {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .accompagnement_green {
+    max-width: 1100px;
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  .elements_menu {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+    .title h2 {
+       max-width: 1100px;
+    margin:30px auto;
   }
 }
 </style>

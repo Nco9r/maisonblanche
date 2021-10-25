@@ -188,7 +188,7 @@ strong {
 
 .block_right p {
   margin-bottom: 10px;
-  text-align: center;
+
   line-height: 24px;
   font-size: 14px;
   color: var(--body);

@@ -17,7 +17,7 @@
         <img class="second " src="~assets/img/jpg/plats_1.jpg" alt="" />
         <img
           class="desktop"
-          src="~assets/img/jpg/restaurant_terasse.jpg"
+          src="~assets/img/jpg/terrasse.jpeg"
           alt=""
         />
       </div>

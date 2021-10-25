@@ -2,19 +2,19 @@
   <main>
     <div class="top_bar_fixed">
       <div class="container_categorie">
-      <div class="container_items">
-        <div class="title">
-          <p>Catégories</p>
+        <div class="container_items">
+          <div class="title">
+            <p>Catégories</p>
+          </div>
+          <div class="items">
+            <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
+            <nuxt-link to="/menu/plats">Plats</nuxt-link>
+            <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
+            <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
+            <nuxt-link to="/menu/vins">Vins</nuxt-link>
+            <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
+          </div>
         </div>
-        <div class="items">
-          <nuxt-link to="/menu/tapas">Tapas</nuxt-link>
-          <nuxt-link to="/menu/plats">Plats</nuxt-link>
-          <nuxt-link to="/menu/desserts">Desserts</nuxt-link>
-          <nuxt-link to="/menu/boissons">Boissons</nuxt-link>
-          <nuxt-link to="/menu/vins">Vins</nuxt-link>
-          <nuxt-link to="/menu/rhum">Rhum</nuxt-link>
-        </div>
-      </div>
       </div>
     </div>
     <section class="menu">
@@ -214,10 +214,10 @@
         </div>
         <p class="description">Amabile Emilia IGT (Romagna)</p>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">
-              Caldora
+            Caldora
             <span class="ligther">Sangiovese</span>75cl
           </p>
           <span></span>
@@ -225,10 +225,10 @@
         </div>
         <p class="description">Terre di Chieti IGT (Albruzzo)</p>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">
-              Mesa
+            Mesa
             <span class="ligther">Primo scuro Cannonau</span>75cl
           </p>
           <span></span>
@@ -236,7 +236,7 @@
         </div>
         <p class="description">Di Sardegna DOC</p>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">
             Antinori Santa Christina Chianti 75cl
@@ -251,7 +251,7 @@
           <h2>Le Champagne</h2>
         </div>
       </div>
-       <div class="content_menu">
+      <div class="content_menu">
         <div class="elements_menu">
           <p class="content">
             Champagne AYALA <span class="ligther">Brut majeur</span>75cl
@@ -266,12 +266,12 @@
 </template>
 
 <script>
-import Newsletter from '../../components/default/Newsletter'
+import Newsletter from "../../components/default/Newsletter";
 export default {
   components: {
     Newsletter
   }
-}
+};
 </script>
 
 <style scoped>
@@ -320,7 +320,7 @@ export default {
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
-  font-family: 'Noto', serif;
+  font-family: "Noto", serif;
 }
 
 .nuxt-link-active {
@@ -342,7 +342,7 @@ export default {
 
 .menu {
   padding: 150px 0 30px 0;
-  background-image: url('~assets/img/jpg/back_bois.png');
+  background-image: url("~assets/img/jpg/back_bois.png");
   background-repeat: repeat;
   background-size: 100%;
 }
@@ -362,7 +362,7 @@ export default {
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-family: "Times New Roman", Times, serif, sans-serif;
 }
 
 .blackBody_1 {
@@ -378,7 +378,7 @@ export default {
   color: var(--black);
   font-size: 24px;
   text-transform: none;
-  font-family: 'italic-title', sans-serif;
+  font-family: "italic-title", sans-serif;
 }
 
 .redBackground_1 {
@@ -396,7 +396,7 @@ export default {
   font-size: 28px;
   font-weight: bold;
   text-transform: none;
-  font-family: 'italic-title';
+  font-family: "italic-title";
 }
 
 .greenBody {
@@ -413,7 +413,7 @@ export default {
   font-size: 32px;
   font-weight: bold;
   text-transform: none;
-  font-family: 'Noto';
+  font-family: "Noto";
 }
 
 .redBody {
@@ -430,7 +430,7 @@ export default {
   font-size: 32px;
   font-weight: bold;
   text-transform: none;
-  font-family: 'Noto';
+  font-family: "Noto";
 }
 
 .greenBackground {
@@ -448,7 +448,7 @@ export default {
   font-size: 32px;
   font-weight: bold;
   text-transform: none;
-  font-family: 'Noto';
+  font-family: "Noto";
 }
 
 .elements_menu {
@@ -503,41 +503,119 @@ export default {
   font-size: lighter;
 }
 
-@media screen and (min-width: 1024px){
-   .menu {
-  padding: 181px 0 30px 0;
-  background-image: url('~assets/img/jpg/back_bois.png');
-  background-repeat: repeat;
-  background-size: 20%;
-}
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 181px 0 30px 0;
+    background-image: url("~assets/img/jpg/back_bois.png");
+    background-repeat: repeat;
+    background-size: 20%;
+  }
 
-.container_categorie {
-  background-color: var(--background);
-  margin-bottom: 20px;
-}
+  .container_categorie {
+    background-color: var(--background) !important;
+    z-index: 101;
+    overflow: hidden;
+  }
 
-.container_items {
-  max-width: 700px;
-  margin: auto;
-  padding-top: 70px;
-  margin-bottom: 50px;
-  padding-bottom: 70px;
-}
+  .container_items {
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
 
-.elements_menu {
-  max-width: 700px;
-  margin: auto;
-}
+  .items {
+    overflow: hidden;
+  }
 
-.elements_menu .content {
-  font-size: 16px;
-  line-height: 32px;
+  .elements_menu {
+    max-width: 700px;
+    margin: auto;
+  }
 
-}
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
 
-.content_menu .description {
-  max-width: 700px;
-  margin: auto;
+  .content_menu .description {
+    max-width: 700px;
+    margin: auto;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding: 180px 0 30px 0;
+    background-image: url("~assets/img/jpg/back_bois.png");
+    background-repeat: repeat;
+    background-size: 20%;
+    margin-top: 1px;
+  }
+
+  .img {
+    display: flex;
+  }
+
+  .img img:nth-child(1) {
+    width: 420px;
+    top: 220px;
+    position: fixed;
+    mix-blend-mode: difference;
+    left: -180px;
+  }
+
+  .img img:nth-child(2) {
+    width: 370px;
+    top: 520px;
+    position: fixed;
+    mix-blend-mode: difference;
+    right: -180px;
+    transform: rotate(180deg);
+  }
+
+  .container_categorie {
+    background-color: var(--background) !important;
+    z-index: 101;
+    overflow: hidden;
+  }
+
+  .container_items {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .items {
+    overflow: hidden;
+  }
+
+  .accompagnement {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .accompagnement_green {
+    max-width: 1100px;
+    margin-top: 10px;
+    margin: auto;
+  }
+
+  .elements_menu {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .elements_menu .content {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .content_menu .description {
+    max-width: 1100px;
+    margin: auto;
+  }
 }
 </style>
