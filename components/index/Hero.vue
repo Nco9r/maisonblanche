@@ -189,7 +189,7 @@ export default {
   .img_food img:nth-child(3) {
     position: absolute;
     top: -215px;
-    display: flex;
+    display: flex!important;
   }
 
   .img_food img:nth-child(2) {
