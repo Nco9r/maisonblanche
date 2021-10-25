@@ -211,6 +211,9 @@ a {
   margin: 20px auto; 
 }
 
+.block_right {
+  margin-top: -20px;
+}
 .block_right p {
   margin-top: 10px;
   width:400px;

@@ -266,7 +266,7 @@ cursor: pointer;
   }
 
   .container_carousel {
-    margin-bottom: -620px;
+    margin-bottom: -20px;
     pointer-events: all;
     margin-left: 50px;
     z-index: 90;
