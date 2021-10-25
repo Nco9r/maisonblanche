@@ -258,6 +258,7 @@ cursor: pointer;
   }
   .block_slide {
     max-width: 300px;
+    margin-top: 130px;
     pointer-events: all;
   }
 
@@ -266,7 +267,7 @@ cursor: pointer;
   }
 
   .container_carousel {
-    margin-bottom: -20px;
+    margin-bottom: -600px;
     pointer-events: all;
     margin-left: 50px;
     z-index: 90;
