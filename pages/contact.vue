@@ -132,23 +132,29 @@
             <strong>téléphone</strong> au +33 (0)6 75 48 36 65.
           </p>
         </div>
-        <form>
+         <form @submit="submitreserve">
           <div class="content_label">
             <div class="label">
               <p>Nom et prénom</p>
-              <input type="text" />
+              <input type="text" required v-model="form.name" />
             </div>
             <div class="label">
               <p>Téléphone</p>
-              <input type="phone" />
+              <input type="phone" required v-model="form.phone" />
             </div>
             <div class="label">
               <p>E-mail</p>
-              <input type="email" />
+              <input type="email" required v-model="form.email" />
             </div>
             <div class="label">
               <p>Nombre de personnes</p>
-              <select name="" id="" required autocomplete="none">
+              <select
+                name=""
+                id=""
+                required
+                autocomplete="none"
+                v-model="form.convives"
+              >
                 <option disabled selected value="Choisir dans la liste"
                   >Choisir dans la liste</option
                 >
@@ -177,7 +183,13 @@
             </div>
             <div class="label">
               <p>Sélectionner un horaire</p>
-              <select name="" id="" required autocomplete="none">
+              <select
+                name=""
+                id=""
+                required
+                autocomplete="none"
+                v-model="form.heure"
+              >
                 <option disabled selected value="Choisir dans la liste"
                   >Choisir dans la liste</option
                 >
@@ -208,6 +220,8 @@
             </div>
           </div>
         </form>
+
+        
       </div>
     </section>
     <newsletter/>
@@ -220,11 +234,6 @@ export default {
   components: { Newsletter },
   data() {
     return {
-      faq_1: false,
-      faq_2: false,
-      faq_3: false,
-      faq_4: false,
-      checkbox: false,
       DateSelected: "",
       date: new Date(Date.now() + 3600 * 1000 * 24),
       checkbox: false,
@@ -232,9 +241,23 @@ export default {
         name: "",
         convives: "",
         heure: "",
-        DateSelected: ""
+        DateSelected: "",
+        email: "",
+        phone: ""
       }
     };
+  },
+  methods: {
+    submitreserve(e) {
+      e.preventDefault();
+      this.$axios
+        .post("https://api.lamaisonblanche-dune.fr/reserve", { ...this.form })
+        .then(res =>
+          (this.form = "")((this.sucess = true))((this.error = false))
+        )
+        .catch(e);
+      //   this.error = true
+    }
   }
 };
 </script>

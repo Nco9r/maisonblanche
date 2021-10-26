@@ -16,23 +16,29 @@
             <strong>téléphone</strong> au +33 (0)6 75 48 36 65.
           </p>
         </div>
-        <form>
+        <form @submit="submitreserve">
           <div class="content_label">
             <div class="label">
               <p>Nom et prénom</p>
-              <input type="text" />
+              <input type="text" required v-model="form.name" />
             </div>
             <div class="label">
               <p>Téléphone</p>
-              <input type="phone" />
+              <input type="phone" required v-model="form.phone" />
             </div>
             <div class="label">
               <p>E-mail</p>
-              <input type="email" />
+              <input type="email" required v-model="form.email" />
             </div>
             <div class="label">
               <p>Nombre de personnes</p>
-              <select name="" id="" required autocomplete="none">
+              <select
+                name=""
+                id=""
+                required
+                autocomplete="none"
+                v-model="form.convives"
+              >
                 <option disabled selected value="Choisir dans la liste"
                   >Choisir dans la liste</option
                 >
@@ -61,7 +67,13 @@
             </div>
             <div class="label">
               <p>Sélectionner un horaire</p>
-              <select name="" id="" required autocomplete="none">
+              <select
+                name=""
+                id=""
+                required
+                autocomplete="none"
+                v-model="form.heure"
+              >
                 <option disabled selected value="Choisir dans la liste"
                   >Choisir dans la liste</option
                 >
@@ -101,18 +113,32 @@
 export default {
   data() {
     return {
-      DateSelected: '',
+      DateSelected: "",
       date: new Date(Date.now() + 3600 * 1000 * 24),
       checkbox: false,
       form: {
-        name: '',
-        convives: '',
-        heure: '',
-        DateSelected: ''
+        name: "",
+        convives: "",
+        heure: "",
+        DateSelected: "",
+        email: "",
+        phone: ""
       }
+    };
+  },
+  methods: {
+    submitreserve(e) {
+      e.preventDefault();
+      this.$axios
+        .post("http://localhost:4000/reserve", { ...this.form })
+        .then(res =>
+          (this.form = "")((this.sucess = true))((this.error = false))
+        )
+        .catch(e);
+      //   this.error = true
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -128,15 +154,14 @@ span.vc-day-content:hover {
   background-color: transparent !important;
 }
 .vc-bleu {
-  background-color: var(--green)!important;
+  background-color: var(--green) !important;
 }
 .vc-day-content .is-disabled {
   color: var(--body) !important;
 }
 
 .vc-day-content .vc-focusable:focus {
-  background-color: var(--green)!important;
-
+  background-color: var(--green) !important;
 }
 
 .vc-day .in-month .vc-day-box-center-center {
@@ -150,7 +175,7 @@ span.vc-day-content:hover {
   color: var(--black);
   border: 1px solid var(--black);
   border-radius: 0px;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .vc-highlights .vc-day-layer {
@@ -167,7 +192,7 @@ strong {
 }
 
 .block_right {
-  background-image: url('~assets/img/jpg/1.jpg');
+  background-image: url("~assets/img/jpg/1.jpg");
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
@@ -184,7 +209,7 @@ strong {
 }
 
 .italic {
-  font-family: 'italic-title';
+  font-family: "italic-title";
   text-transform: none;
   margin-left: 5px;
 }
@@ -218,14 +243,14 @@ strong {
 }
 
 .label p:nth-child(1):after {
-  content: '*';
+  content: "*";
   position: absolute;
   top: 0;
   margin-left: 2px;
 }
 
 .label_1 p::after {
-  content: '*';
+  content: "*";
   position: absolute;
   top: 0;
   margin-left: 2px;
@@ -246,7 +271,7 @@ strong {
   padding: 10px;
   font-size: 16px;
   color: var(--body);
-  font-family: 'Noto', sans-serif;
+  font-family: "Noto", sans-serif;
   outline: none;
   -webkit-appearance: none;
 }
@@ -254,7 +279,7 @@ strong {
 .label input::placeholder {
   font-size: 16px;
   color: var(--body);
-  font-family: 'Noto', sans-serif;
+  font-family: "Noto", sans-serif;
 }
 
 select {
@@ -276,7 +301,7 @@ select option {
   color: var(--black);
 }
 
-input[type='checkbox' i] {
+input[type="checkbox" i] {
   background-color: var(--white) !important;
   width: 90px;
   border: 1px solid var(--redBody) !important;
@@ -287,7 +312,7 @@ input[type='checkbox' i] {
   transition: all 0.3s;
 }
 
-input[type='checkbox' i]:checked {
+input[type="checkbox" i]:checked {
   background-color: var(--redBody) !important;
   width: 90px;
   height: 30px;
@@ -296,8 +321,8 @@ input[type='checkbox' i]:checked {
   transition: all 0.3s;
 }
 
-input[type='checkbox' i]:checked::after {
-  content: 'x';
+input[type="checkbox" i]:checked::after {
+  content: "x";
   font-size: 16px;
   color: white;
   font-weight: bold;
@@ -332,7 +357,7 @@ input[type='checkbox' i]:checked::after {
   width: 100%;
   opacity: 0.5;
   color: var(--white);
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-weight: bold;
   margin: 10px 0px;
 }
@@ -360,14 +385,14 @@ input[type='checkbox' i]:checked::after {
 }
 
 @media screen and (min-width: 1024px) {
-    .reservation {
-      display: flex; 
-      flex-flow: column; 
-    }
-    
-    .block_left {
-      max-width: 600px; 
-      margin: auto;
-    }
+  .reservation {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .block_left {
+    max-width: 600px;
+    margin: auto;
+  }
 }
 </style>

@@ -1,6 +1,11 @@
+const strapiBaseUri = process.env.API_URL || 'https://admin.lamaisonblanche-dune.fr/'
+
 module.exports = {
   mode: 'universal',
   buildDir: 'nuxt-dist',
+  env: {
+    strapiBaseUri,
+  },
   /*
    ** Headers of the page
    */
@@ -59,8 +64,8 @@ module.exports = {
     '@nuxtjs/strapi'
   ],
   strapi: {
-    url: 'https://api.rouxnicolas.fr/',
-    entities: ['evenements']
+    url: strapiBaseUri,
+    entities: ['evenement'],
   },
   /*
    ** Axios module configuration

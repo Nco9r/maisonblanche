@@ -22,9 +22,6 @@
             Il y <span>{{ evenements.length }}</span> événements à venir à la
             Maison Blanche.
           </p>
-          <p v-if="evenements.length === 0">
-            Il n'y a aucun événements à venir à la Maison Blanche.
-          </p>
         </div>
         <hr />
       </div>
@@ -36,7 +33,7 @@
         >
           <div class="evenement">
             <div class="img">
-              <img :src="evenement.imgUrl" alt="" />
+              <img :src="getStrapiMedia(evenement.img.url)" alt="" />
             </div>
             <div class="content">
               <div class="content-title">
@@ -57,21 +54,22 @@
 
 <script>
 import Newsletter from "../../components/default/Newsletter";
+import { getStrapiMedia } from '../../utils/media'
+
 
 export default {
   async asyncData({ $strapi }) {
-    const evenements = await $strapi.$evenements.find();
-    return { evenements };
+    return {
+      evenements: await $strapi.find('evenements'),
+    }
   },
 
   components: {
     Newsletter
   },
-  data() {
-    return {
-      api_Url: "https://api.rouxnicolas.fr/"
-    };
-  }
+  methods: {
+    getStrapiMedia
+  },
 };
 </script>
 

@@ -14,16 +14,44 @@
       </div>
       <div class="input_newsletter">
         <div class="box_input">
-          <input type="text" placeholder="votre@email.fr" />
-          <button>Ok</button>
+          <input type="text" placeholder="votre@email.fr" v-model="form.email" />
+          <button @click="submit">Ok</button>
         </div>
+          <p class="sucess" v-if="sucess">Merci pour votre inscription 😛</p>
       </div>
+
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      form: {
+        email: ''
+      },
+      error: [],
+      sucess: false,
+    }
+  },
+  methods:{
+        submit(e) {
+      e.preventDefault()
+      this.$axios
+        .post('https://api.lamaisonblanche-dune.fr/subscribe', { ...this.form })
+        .then(
+          (res) => (
+            (this.form = '')
+            (this.sucess = true)
+            (this.error = false)
+          )
+        )
+        .catch(e) 
+    //   this.error = true
+    }
+    },
+}
 </script>
 
 <style scoped>
@@ -58,6 +86,11 @@ export default {}
   margin-left: 5px;
   margin-bottom: 10px;
   z-index: 1;
+}
+
+.sucess {
+  color: white;
+  margin-top: 30px;
 }
 
 .rond {
